@@ -33,6 +33,7 @@ jobs:
           git config user.email "actions@github.com"
           git add bandit-report.json
           git commit -m "Add Bandit scan report [skip ci]" || echo "No changes to commit"
+          git pull --rebase origin main
           git push
 
       - name: Check for critical findings
@@ -72,6 +73,7 @@ jobs:
           git config user.email "actions@github.com"
           git add trivy-report.json
           git commit -m "Add Trivy scan report [skip ci]" || echo "No changes to commit"
+          git pull --rebase origin main
           git push
 
       - name: Check for critical findings
