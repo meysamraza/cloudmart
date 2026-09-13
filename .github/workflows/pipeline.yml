@@ -48,3 +48,46 @@ jobs:
           else:
               print('No high-severity issues found')
           "
+
+  container-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t cloudmart:latest .
+
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: 'cloudmart:latest'
+          format: 'json'
+          output: 'trivy-report.json'
+          severity: 'CRITICAL,HIGH'
+
+      - name: Commit Trivy report to repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add trivy-report.json
+          git commit -m "Add Trivy scan report [skip ci]" || echo "No changes to commit"
+          git push
+
+      - name: Check for critical findings
+        run: |
+          python3 -c "
+          import json
+          with open('trivy-report.json') as f:
+              data = json.load(f)
+          critical = []
+          for result in data.get('Results', []):
+              for vuln in result.get('Vulnerabilities', []) or []:
+                  if vuln.get('Severity') == 'CRITICAL':
+                      critical.append(vuln)
+          if critical:
+              print(f'BLOCKED: {len(critical)} critical vulnerability(ies) found')
+              exit(1)
+          else:
+              print('No critical vulnerabilities found')
+          "
