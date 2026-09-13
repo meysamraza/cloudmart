@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudMart — Training Lab</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <span class="nav-title">CloudMart</span>
+      <span class="nav-label">Training Lab</span>
+    </div>
+
+    <div class="nav-actions">
+      <div class="user-info">
+        Logged in as: <strong id="current-username">...</strong> (<span id="current-role">...</span>)
+      </div>
+      <button id="admin-check-btn" class="btn btn-admin">
+        Admin Users (/admin/users)
+      </button>
+      <button id="logout-btn" class="btn btn-outline">
+        Logout
+      </button>
+    </div>
+  </header>
+
+  <!-- Notification Banner -->
+  <div id="flash-banner" class="flash-banner hidden"></div>
+
+  <main class="container">
+    <!-- Compact Testing Hints -->
+    <div class="hints-box">
+      <div class="hint-item"><strong>SQL Injection:</strong> In the search box, try entering <code>' OR '1'='1</code> or <code>'</code></div>
+      <div class="hint-item"><strong>BOLA / IDOR:</strong> Click an order link below, then change the ID in your browser address bar</div>
+      <div class="hint-item"><strong>Broken Authz:</strong> Click "Admin Users" above to test if regular users can read user records</div>
+    </div>
+
+    <!-- Main Grid: Catalog + Orders -->
+    <div class="dashboard-grid">
+      
+      <!-- Catalog Section -->
+      <section class="card">
+        <div class="card-header">
+          <h2>Product Catalog</h2>
+          <form id="search-form" class="search-form">
+            <input type="text" id="search-input" placeholder="Search products...">
+            <button type="submit" class="btn btn-primary">Search</button>
+            <button type="button" id="search-reset" class="btn btn-outline">Reset</button>
+          </form>
+        </div>
+
+        <div id="search-feedback" class="search-feedback hidden"></div>
+
+        <div id="product-list" class="product-grid">
+          <div class="loading">Loading products...</div>
+        </div>
+      </section>
+
+      <!-- My Orders Section -->
+      <section class="card">
+        <div class="card-header">
+          <h2>My Orders</h2>
+        </div>
+
+        <p class="section-note">
+          Click an order link to view its details. Notice what happens if you edit the ID in your browser URL.
+        </p>
+
+        <table class="simple-table">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Product</th>
+              <th>Qty</th>
+              <th>Status</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody id="orders-tbody">
+            <tr>
+              <td colspan="5" class="text-muted">Loading orders...</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+    </div>
+
+    <!-- Live Request Log -->
+    <section class="card">
+      <div class="card-header">
+        <h2>Live Request Log</h2>
+        <span class="request-note">Auto-refreshing every 2s via <code>/api/request-log</code></span>
+      </div>
+
+      <table class="simple-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Method</th>
+            <th>Endpoint</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="request-log-tbody">
+          <tr>
+            <td colspan="4" class="text-muted">Waiting for requests...</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- Admin Users Modal -->
+  <div id="admin-modal" class="modal-backdrop hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>GET /admin/users Response</h3>
+        <button id="close-modal" class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-note">
+          The backend returned this data without verifying your user role:
+        </p>
+        <table class="simple-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Plaintext Password</th>
+              <th>Role</th>
+            </tr>
+          </thead>
+          <tbody id="admin-users-tbody">
+            <tr><td colspan="5" class="text-muted">Loading...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudMart — Sign In</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="auth-page">
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="brand-header">
+        <h1>CloudMart <span class="nav-label">Training Lab</span></h1>
+        <p class="subtitle">Enter credentials to sign in to the student portal</p>
+      </div>
+
+      <div id="alert-box" class="alert hidden"></div>
+
+      <form id="login-form">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="alice" required autofocus>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="••••••••" required>
+        </div>
+
+        <button type="submit" id="login-btn" class="btn btn-primary btn-block">
+          Sign In
+        </button>
+      </form>
+
+      <div class="quick-credentials">
+        <span class="quick-title">Quick lab accounts (click to fill):</span>
+        <div class="account-buttons">
+          <button type="button" class="btn-account" onclick="autofill('alice', 'password123')">alice</button>
+          <button type="button" class="btn-account" onclick="autofill('bob', 'letmein')">bob</button>
+          <button type="button" class="btn-account" onclick="autofill('charlie', 'qwerty')">charlie</button>
+          <button type="button" class="btn-account" onclick="autofill('admin', 'admin1234')">admin</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function autofill(user, pass) {
+      document.getElementById('username').value = user;
+      document.getElementById('password').value = pass;
+      document.getElementById('password').focus();
+    }
+
+    if (localStorage.getItem('token')) {
+      window.location.href = '/dashboard';
+    }
+
+    const form = document.getElementById('login-form');
+    const alertBox = document.getElementById('alert-box');
+    const loginBtn = document.getElementById('login-btn');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      alertBox.className = 'alert hidden';
+      loginBtn.disabled = true;
+      loginBtn.textContent = 'Signing in...';
+
+      const username = document.getElementById('username').value.trim();
+      const password = document.getElementById('password').value;
+
+      try {
+        const res = await fetch('/login', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username, password })
+        });
+
+        const data = await res.json();
+
+        if (res.ok && data.token) {
+          localStorage.setItem('token', data.token);
+          localStorage.setItem('user', JSON.stringify(data.user));
+          document.cookie = `token=${data.token}; path=/; max-age=86400`;
+          window.location.href = '/dashboard';
+        } else {
+          alertBox.textContent = data.message || data.error || 'Authentication failed';
+          alertBox.className = 'alert alert-danger';
+        }
+      } catch (err) {
+        alertBox.textContent = 'Connection error. Check if the server is running.';
+        alertBox.className = 'alert alert-danger';
+      } finally {
+        loginBtn.disabled = false;
+        loginBtn.textContent = 'Sign In';
+      }
+    });
+  </script>
+</body>
+</html>
