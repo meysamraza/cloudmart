@@ -106,6 +106,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeModalBtn = document.getElementById("close-modal");
 
   if (adminBtn) {
+    if (!currentUser || currentUser.role !== "admin") {
+      adminBtn.style.display = "none";
+      adminBtn.classList.add("hidden");
+    } else {
+      adminBtn.style.display = "";
+      adminBtn.classList.remove("hidden");
+    }
     adminBtn.addEventListener("click", openAdminUsersModal);
   }
 
