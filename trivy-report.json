@@ -3,28 +3,28 @@
   "Trivy": {
     "Version": "0.74.0"
   },
-  "ReportID": "01a0a9b0-4cf6-7d70-af25-6bd4381c5bec",
-  "CreatedAt": "2026-09-16T10:08:18.67888187Z",
-  "ArtifactID": "sha256:302bb2d611030487619ed18be07beb019d193db306a7ca70429048eacc1698b6",
+  "ReportID": "01a0a9c0-4d3f-7e03-9145-b5b404e4d602",
+  "CreatedAt": "2026-09-16T10:25:47.327922511Z",
+  "ArtifactID": "sha256:c5613ef7f411f1801f8673dbbf24286be97ed59eaeab88b11589f1b7711930fe",
   "ArtifactName": "cloudmart:latest",
   "ArtifactType": "container_image",
   "Metadata": {
-    "Size": 139695616,
+    "Size": 140471296,
     "OS": {
       "Family": "debian",
       "Name": "13.1"
     },
-    "ImageID": "sha256:5c21710f8aaa6ca36538da01ec3a1724677e234aac8032f03a495ba092cbdb23",
+    "ImageID": "sha256:6bf57f7ca1e2e49d7ce1e721e590c274f80397bf8f2fd3057a220cff62b39262",
     "DiffIDs": [
       "sha256:d7c97cb6f1fe7cae982649e9f55efe201212e8acaa64bd668c083b204e4efd4c",
       "sha256:4f237755fbae41472cb9e0f874fa97abb8d684f8fdcc6bd485edc8b6267a9c93",
       "sha256:298992e09a0315a8f26375a553f216f5fad3decf392956fd2de5ef7aa1f8dfea",
       "sha256:c8f6b54339a8b44071408bd33dd69a9dc7db2ed9cdbf7c533ba09efecda5f33f",
-      "sha256:1d8d7f464f4f5ee3466c3a7415588209fb853de61b7284fabf093641f8a9ded2",
-      "sha256:84eb297956eb26d791fa34bfd4f211cddb4fa5a5ac42d252ce5f9189e445bf79",
-      "sha256:c5906b9faa689f2a97fc0a05a9ad5edf8a855440a865c605f89aa7853bb9eca7",
-      "sha256:2fe99862ae93adbf793a518f42d4f5584ee03d2d98aae834ea99709e0f3fc5ca",
-      "sha256:d584e50975340f45acf1447539f5dc19a1a5c768ebbf505687ba0369b17c4c79"
+      "sha256:b7559e31537a895b079385464de5c6d67328e2899f9ee27607dd762709aa5611",
+      "sha256:bf14e8a8dcec75ec4d7f43bb20039b630d099c526efcc7ea135e1adf6e009e99",
+      "sha256:a3edb342c8fc158eb3a6ea2bd694fc3ff5115efa5dce5f3d2bb636388e784fdc",
+      "sha256:b5da3c17eda8d6e7817c1019a691e7291c281652bf99edf479f4311131387993",
+      "sha256:5d2cc9246cb81f979567523cc1db5d25a934da5e0e9c32f3ff087845db53900c"
     ],
     "RepoTags": [
       "cloudmart:latest"
@@ -32,7 +32,7 @@
     "Reference": "cloudmart:latest",
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2026-09-16T10:08:07.631946658Z",
+      "created": "2026-09-16T10:25:36.320092853Z",
       "history": [
         {
           "created": "2025-10-20T00:00:00Z",
@@ -91,38 +91,38 @@
           "empty_layer": true
         },
         {
-          "created": "2026-09-16T10:08:04Z",
+          "created": "2026-09-16T10:25:32Z",
           "created_by": "WORKDIR /app",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-09-16T10:08:04Z",
+          "created": "2026-09-16T10:25:33Z",
           "created_by": "COPY requirements.txt . # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-09-16T10:08:07Z",
+          "created": "2026-09-16T10:25:36Z",
           "created_by": "RUN /bin/sh -c pip install -r requirements.txt # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-09-16T10:08:07Z",
+          "created": "2026-09-16T10:25:36Z",
           "created_by": "COPY . . # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-09-16T10:08:07Z",
+          "created": "2026-09-16T10:25:36Z",
           "created_by": "RUN /bin/sh -c python init_db.py # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2026-09-16T10:08:07Z",
+          "created": "2026-09-16T10:25:36Z",
           "created_by": "EXPOSE map[5000/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2026-09-16T10:08:07Z",
+          "created": "2026-09-16T10:25:36Z",
           "created_by": "CMD [\"python\" \"app.py\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -136,11 +136,11 @@
           "sha256:4f237755fbae41472cb9e0f874fa97abb8d684f8fdcc6bd485edc8b6267a9c93",
           "sha256:298992e09a0315a8f26375a553f216f5fad3decf392956fd2de5ef7aa1f8dfea",
           "sha256:c8f6b54339a8b44071408bd33dd69a9dc7db2ed9cdbf7c533ba09efecda5f33f",
-          "sha256:1d8d7f464f4f5ee3466c3a7415588209fb853de61b7284fabf093641f8a9ded2",
-          "sha256:84eb297956eb26d791fa34bfd4f211cddb4fa5a5ac42d252ce5f9189e445bf79",
-          "sha256:c5906b9faa689f2a97fc0a05a9ad5edf8a855440a865c605f89aa7853bb9eca7",
-          "sha256:2fe99862ae93adbf793a518f42d4f5584ee03d2d98aae834ea99709e0f3fc5ca",
-          "sha256:d584e50975340f45acf1447539f5dc19a1a5c768ebbf505687ba0369b17c4c79"
+          "sha256:b7559e31537a895b079385464de5c6d67328e2899f9ee27607dd762709aa5611",
+          "sha256:bf14e8a8dcec75ec4d7f43bb20039b630d099c526efcc7ea135e1adf6e009e99",
+          "sha256:a3edb342c8fc158eb3a6ea2bd694fc3ff5115efa5dce5f3d2bb636388e784fdc",
+          "sha256:b5da3c17eda8d6e7817c1019a691e7291c281652bf99edf479f4311131387993",
+          "sha256:5d2cc9246cb81f979567523cc1db5d25a934da5e0e9c32f3ff087845db53900c"
         ]
       },
       "config": {
@@ -181,23 +181,23 @@
       },
       {
         "Size": 1536,
-        "DiffID": "sha256:1d8d7f464f4f5ee3466c3a7415588209fb853de61b7284fabf093641f8a9ded2"
+        "DiffID": "sha256:b7559e31537a895b079385464de5c6d67328e2899f9ee27607dd762709aa5611"
       },
       {
         "Size": 2560,
-        "DiffID": "sha256:84eb297956eb26d791fa34bfd4f211cddb4fa5a5ac42d252ce5f9189e445bf79"
+        "DiffID": "sha256:bf14e8a8dcec75ec4d7f43bb20039b630d099c526efcc7ea135e1adf6e009e99"
       },
       {
-        "Size": 13065728,
-        "DiffID": "sha256:c5906b9faa689f2a97fc0a05a9ad5edf8a855440a865c605f89aa7853bb9eca7"
+        "Size": 13065216,
+        "DiffID": "sha256:a3edb342c8fc158eb3a6ea2bd694fc3ff5115efa5dce5f3d2bb636388e784fdc"
       },
       {
-        "Size": 137728,
-        "DiffID": "sha256:2fe99862ae93adbf793a518f42d4f5584ee03d2d98aae834ea99709e0f3fc5ca"
+        "Size": 913920,
+        "DiffID": "sha256:b5da3c17eda8d6e7817c1019a691e7291c281652bf99edf479f4311131387993"
       },
       {
         "Size": 34816,
-        "DiffID": "sha256:d584e50975340f45acf1447539f5dc19a1a5c768ebbf505687ba0369b17c4c79"
+        "DiffID": "sha256:5d2cc9246cb81f979567523cc1db5d25a934da5e0e9c32f3ff087845db53900c"
       }
     ]
   },
@@ -7748,7 +7748,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:4ebb2e2946115976086a307633775c5850f51c13718b53608dd1bd7e82088b98",
+          "Fingerprint": "sha256:7681fd6a6c5b16add5f07b0b38c387cfbe8b850ed772673188b7fe6cd7ec9fa5",
           "Title": "util-linux: util-linux: TOCTOU in the mount program when applying post-mount ownership/mode changes",
           "Description": "A flaw was found in util-linux. When an /etc/fstab entry uses the user option together with X-mount.owner, X-mount.group, or X-mount.mode, mount(8) changes ownership or permissions on the mount target after mounting without re-verifying the path. A local unprivileged user can exploit this Time-of-Check-Time-of-Use (TOCTOU) window by swapping the target directory, redirecting the ownership/permission change to an arbitrary file and potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -7793,7 +7793,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:aeeab5611e6f9a08df9c2d2bdee93ca5c841e9e9e20caf08406fbb26ba6e6dd0",
+          "Fingerprint": "sha256:6078f2824352c0f804dc62108e1cbb6d77a712409a4fe4274c6e3286298a95db",
           "Title": "util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path",
           "Description": "When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -7838,7 +7838,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:4a46b09f00aa09609aad6993ad52d21cc7266fed96b0514db959c68da0a203cd",
+          "Fingerprint": "sha256:59bf78b0701fc3fecd7ad78a0a2b94075ffba7aa3f1c1cdc3ad1197461877e8d",
           "Title": "util-linux: util-linux: SUID mount(8) allows nosuid/noexec bypass via LIBMOUNT_FORCE_MOUNT2",
           "Description": "A flaw was found in util-linux. The mount(8) SUID binary does not sanitize the LIBMOUNT_FORCE_MOUNT2 environment variable before use. A local unprivileged user can set this variable to force mount(8) to use the legacy two-step mount(2) code path, which applies security restrictions such as nosuid and noexec after the mount is already active. During this window, an attacker can execute a SUID binary from the mounted filesystem, allowing local privilege escalation to root.",
           "Severity": "HIGH",
@@ -7879,7 +7879,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:c2955bce03d1f3c6aaf0fb1cc38101087185fb6e063dee14fb6f1f0d1f1ea584",
+          "Fingerprint": "sha256:1335fcfb249a6fd94a37c208f043b0903c4dc2a73823176da9f02a65926a1689",
           "Title": "util-linux: util-linux: failed external mount helper still runs privileged X-mount post-hooks",
           "Description": "util-linux versions through 2.41.5 and 2.42.2 fail to check mount helper exit status before running post-mount hooks, allowing unprivileged users to execute privileged operations on pre-existing filesystems. Attackers can exploit X-mount.idmap or X-mount.owner hooks to clone filesystems with inherited suid bits or modify target inode permissions after a helper fails, achieving privilege escalation.",
           "Severity": "HIGH",
@@ -7930,7 +7930,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:a4e464d52faf905d8fb5a9e64aa084c30e3f55f183bbda69c30feab09dde9366",
+          "Fingerprint": "sha256:f94afd88658ecdde1635040ce73bcabfb9b4e1c5cd798053fbc44d20163d8559",
           "Title": "util-linux: util-linux: nsenter --join-cgroup leaks root cgroup migration authority",
           "Description": "The nsenter --join-cgroup option opens the target cgroup.procs file as root and leaves that file descriptor open across later namespace and credential changes and across execve(). Because the kernel checks later cgroup migrations using the credentials from the original open, a program run in an attacker-controlled target can inherit root's ability to move host processes between cgroups. After a privileged operator uses --join-cgroup against that target, an unprivileged user can migrate and terminate unrelated root processes.",
           "Severity": "HIGH",
@@ -7977,7 +7977,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:40804776b1ef73b50e8f01f647152ea1d1702d61ab7164812640e0a062d3c94e",
+          "Fingerprint": "sha256:079aca44dbfd1fc88656ddb7361c61f293b59563d3a863c6cca3d85b45971d58",
           "Title": "util-linux: util-linux: X-mount.subdir detached-tree resolution can escape via intermediate symlinks",
           "Description": "The X-mount.subdir option uses a detached-tree fast path on Linux 6.15 and later and passes the configured subdirectory to open_tree() with AT_SYMLINK_NOFOLLOW. That flag does not stop intermediate symlink traversal or keep resolution inside the newly mounted filesystem. A local unprivileged user with an fstab-authorized X-mount.subdir entry can attach a host path at the intended mountpoint.",
           "Severity": "HIGH",
@@ -8023,7 +8023,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:6d0f9cb42bb9340ab6744c525935eaa42929aa55f8af9456ed5a20837edf242d",
+          "Fingerprint": "sha256:f1834b1c0df25a3a62b4e5189dec85074974ccb1ce3fbff922c56e80370c01e2",
           "Title": "util-linux: util-linux: restricted bind mounts do not pin the source, allowing X-mount.owner/group/mode redirection",
           "Description": "A flaw was found in util-linux. Restricted bind mounts take the source path from fstab but do not pin that source before the privileged mount. A local unprivileged user who can replace the authorized source or a writable ancestor can redirect SUID mount(8) to bind another host directory. If the fstab entry also sets X-mount.owner, X-mount.group, or X-mount.mode, root then changes ownership or mode on that redirected inode.",
           "Severity": "HIGH",
@@ -8071,7 +8071,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:e8ffb7c619fe6612386f05a6306c9450e46576e4c0c87b7878a13de1e1af2cad",
+          "Fingerprint": "sha256:71515dd77898421416eb0602f88e398ddc20423a24adac956ae0954f3d98711e",
           "Title": "gzip: gzip: Information disclosure via global buffer overflow in LZH decompression",
           "Description": "GNU gzip contains a global buffer overflow vulnerability in the LZH decompression logic caused by improper reuse of shared global state between different decompression formats within a single execution. GNU gzip maintains a global array that is shared across the LZ77, LZW, and LZH decompression routines and is not reinitialized between files processed in the same invocation.\nBy decompressing a specially crafted LZW file followed by a specially crafted LZH file in a single gzip -d command, an attacker can poison the shared global state and subsequently trigger an out‑of‑bounds read in the LZH decoder. The LZH decompression logic follows stale values left in the shared array, causing reads past the end of the allocated global buffer.\n\nThis issue has been fixed in commits 63dbf6b3b9e6e781df1a6a64e609b10e23969681 and e7378c2d421be6a286922374425680bbe9ad8b7d.",
           "Severity": "HIGH",
@@ -8155,7 +8155,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:0e0a9b815ef477554574ed20fb5c87ac44126fd5cf7e9c3620119a11e51600fd",
+          "Fingerprint": "sha256:ddfc0af460816f17acf88908337150bd5eb1da080f0d9e2dafae02f4d5aaabf1",
           "Title": "acl: Symlink traversal privilege escalation via libacl functions",
           "Description": "acl before version 2.4.0 contains a symlink traversal vulnerability in the libacl pathname-based functions acl_get_file(), acl_set_file(), acl_extended_file(), and acl_delete_def_file() that allows local attackers to escalate privileges by replacing any pathname component with a symbolic link. Attackers who control any component of a pathname processed by a privileged caller can redirect ACL read or write operations to arbitrary files or directories, enabling unauthorized manipulation of access control lists and local privilege escalation.",
           "Severity": "HIGH",
@@ -8237,7 +8237,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:f13fd73913ddb4bbb9c78705e8cf4272268352295a7c107718486ad0f415cdca",
+          "Fingerprint": "sha256:b473a4a4d7e7c27c07b480ccd8d4b93fcb033863e61a9c6b4aa1257990a130f6",
           "Title": "util-linux: util-linux: TOCTOU in the mount program when applying post-mount ownership/mode changes",
           "Description": "A flaw was found in util-linux. When an /etc/fstab entry uses the user option together with X-mount.owner, X-mount.group, or X-mount.mode, mount(8) changes ownership or permissions on the mount target after mounting without re-verifying the path. A local unprivileged user can exploit this Time-of-Check-Time-of-Use (TOCTOU) window by swapping the target directory, redirecting the ownership/permission change to an arbitrary file and potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -8282,7 +8282,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:5a3604f11cae3af5833e66a698acc9890aa207c70cc267715558c9c404d6c337",
+          "Fingerprint": "sha256:c4095663307466a153d3757007b32e95adba975804023c6bbcaa156eb735a709",
           "Title": "util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path",
           "Description": "When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -8327,7 +8327,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:dde2416e6e9fc2cc01c707b5f75ad1ad5ce6e734463d9ad58fbd2f17a34f979e",
+          "Fingerprint": "sha256:7cf1f6466371e55f523d643e74fe5dd104d859fa3b28f539d9ee57fc4d6284c4",
           "Title": "util-linux: util-linux: SUID mount(8) allows nosuid/noexec bypass via LIBMOUNT_FORCE_MOUNT2",
           "Description": "A flaw was found in util-linux. The mount(8) SUID binary does not sanitize the LIBMOUNT_FORCE_MOUNT2 environment variable before use. A local unprivileged user can set this variable to force mount(8) to use the legacy two-step mount(2) code path, which applies security restrictions such as nosuid and noexec after the mount is already active. During this window, an attacker can execute a SUID binary from the mounted filesystem, allowing local privilege escalation to root.",
           "Severity": "HIGH",
@@ -8368,7 +8368,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:0a550c064c568b0b4bb9fa744b8cd8184445eb2a8d1f57e5c218d2eeb870619b",
+          "Fingerprint": "sha256:536f12aa873489ae8d808ba617457c57c84e20bc1f12fdc4383e4e6742b9ffd2",
           "Title": "util-linux: util-linux: failed external mount helper still runs privileged X-mount post-hooks",
           "Description": "util-linux versions through 2.41.5 and 2.42.2 fail to check mount helper exit status before running post-mount hooks, allowing unprivileged users to execute privileged operations on pre-existing filesystems. Attackers can exploit X-mount.idmap or X-mount.owner hooks to clone filesystems with inherited suid bits or modify target inode permissions after a helper fails, achieving privilege escalation.",
           "Severity": "HIGH",
@@ -8419,7 +8419,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:84f6fa3f29615039a389af4a199e300b3952891f19ed0d67c37d471e7d3936cb",
+          "Fingerprint": "sha256:4a1e35432276511771067a1610a1c37e9969ecfc4548d812a0067048f8a46aee",
           "Title": "util-linux: util-linux: nsenter --join-cgroup leaks root cgroup migration authority",
           "Description": "The nsenter --join-cgroup option opens the target cgroup.procs file as root and leaves that file descriptor open across later namespace and credential changes and across execve(). Because the kernel checks later cgroup migrations using the credentials from the original open, a program run in an attacker-controlled target can inherit root's ability to move host processes between cgroups. After a privileged operator uses --join-cgroup against that target, an unprivileged user can migrate and terminate unrelated root processes.",
           "Severity": "HIGH",
@@ -8466,7 +8466,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:b2e2d87b09d39097e8b1da8dff64e17439ef21f2f3bc3e4d25b0416e51d7b422",
+          "Fingerprint": "sha256:6dd6e902dc077a182fad42ed23d116f94a49736f0685053528f08de6621725a4",
           "Title": "util-linux: util-linux: X-mount.subdir detached-tree resolution can escape via intermediate symlinks",
           "Description": "The X-mount.subdir option uses a detached-tree fast path on Linux 6.15 and later and passes the configured subdirectory to open_tree() with AT_SYMLINK_NOFOLLOW. That flag does not stop intermediate symlink traversal or keep resolution inside the newly mounted filesystem. A local unprivileged user with an fstab-authorized X-mount.subdir entry can attach a host path at the intended mountpoint.",
           "Severity": "HIGH",
@@ -8512,7 +8512,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:748f8b2a2bdaa9690a8b4ac049ca47beb31530a002552588e54fd941915c5b97",
+          "Fingerprint": "sha256:9ea47a380446372d297bc12f3c0c3dd726b9f673b72f2e77a796d45ffd85514e",
           "Title": "util-linux: util-linux: restricted bind mounts do not pin the source, allowing X-mount.owner/group/mode redirection",
           "Description": "A flaw was found in util-linux. Restricted bind mounts take the source path from fstab but do not pin that source before the privileged mount. A local unprivileged user who can replace the authorized source or a writable ancestor can redirect SUID mount(8) to bind another host directory. If the fstab entry also sets X-mount.owner, X-mount.group, or X-mount.mode, root then changes ownership or mode on that redirected inode.",
           "Severity": "HIGH",
@@ -8560,7 +8560,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:e9c3a33130c3fa8adcf2424dd154350569a23a3cd61bcb520aefc0efdf8eca56",
+          "Fingerprint": "sha256:723c745523c7cc9e273f97f1d713cf77a64619c1fa6f75acda8b72248f870508",
           "Title": "libcap: libcap: Privilege escalation via TOCTOU race condition in cap_set_file()",
           "Description": "A flaw was found in libcap. A local unprivileged user can exploit a Time-of-check-to-time-of-use (TOCTOU) race condition in the `cap_set_file()` function. This allows an attacker with write access to a parent directory to redirect file capability updates to an attacker-controlled file. By doing so, capabilities can be injected into or stripped from unintended executables, leading to privilege escalation.",
           "Severity": "HIGH",
@@ -8672,7 +8672,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:3e8b12515f1ed01244c2d32c2a7626ca87ffac8f7496d6ba887cd5a75410bd9c",
+          "Fingerprint": "sha256:395c02507b9000ce093d5733d1edaf97630a1b99f0213351360ad8d78c6064df",
           "Title": "util-linux: util-linux: TOCTOU in the mount program when applying post-mount ownership/mode changes",
           "Description": "A flaw was found in util-linux. When an /etc/fstab entry uses the user option together with X-mount.owner, X-mount.group, or X-mount.mode, mount(8) changes ownership or permissions on the mount target after mounting without re-verifying the path. A local unprivileged user can exploit this Time-of-Check-Time-of-Use (TOCTOU) window by swapping the target directory, redirecting the ownership/permission change to an arbitrary file and potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -8717,7 +8717,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:638449e23fb02196de2d6e71bd17be3330f20b719f50f15d8d69813236c6b4c6",
+          "Fingerprint": "sha256:7c21118e3d5b509460ca85cc9b17ee97ddf94772730882f52c7a90fdede25587",
           "Title": "util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path",
           "Description": "When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -8762,7 +8762,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:489affae08b84272c493a71aab272ff0ad2ae17c450f32e5aeecbf81b5a3fee9",
+          "Fingerprint": "sha256:812d853a25890159ad710f9a7221ba7d14f70583f453f5fcc478e0924792ecf7",
           "Title": "util-linux: util-linux: SUID mount(8) allows nosuid/noexec bypass via LIBMOUNT_FORCE_MOUNT2",
           "Description": "A flaw was found in util-linux. The mount(8) SUID binary does not sanitize the LIBMOUNT_FORCE_MOUNT2 environment variable before use. A local unprivileged user can set this variable to force mount(8) to use the legacy two-step mount(2) code path, which applies security restrictions such as nosuid and noexec after the mount is already active. During this window, an attacker can execute a SUID binary from the mounted filesystem, allowing local privilege escalation to root.",
           "Severity": "HIGH",
@@ -8803,7 +8803,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:bf4be29e7efafc386f61925d5adb8681d8626f3c77916eecce13e7b5727e51d2",
+          "Fingerprint": "sha256:5ff196deb3828cac83c28b0fcc4b3f1e870be84ca7fdaca813dd9e505ab824b5",
           "Title": "util-linux: util-linux: failed external mount helper still runs privileged X-mount post-hooks",
           "Description": "util-linux versions through 2.41.5 and 2.42.2 fail to check mount helper exit status before running post-mount hooks, allowing unprivileged users to execute privileged operations on pre-existing filesystems. Attackers can exploit X-mount.idmap or X-mount.owner hooks to clone filesystems with inherited suid bits or modify target inode permissions after a helper fails, achieving privilege escalation.",
           "Severity": "HIGH",
@@ -8854,7 +8854,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:12cebf20fc899b5778493c0ec21f1045b4450fbdd0bbcf44459ba2003a0dd97d",
+          "Fingerprint": "sha256:02d3d42fa8dff34eb02fbaf175a086a5a76cf78aaa1dfc2f668af64223958a61",
           "Title": "util-linux: util-linux: nsenter --join-cgroup leaks root cgroup migration authority",
           "Description": "The nsenter --join-cgroup option opens the target cgroup.procs file as root and leaves that file descriptor open across later namespace and credential changes and across execve(). Because the kernel checks later cgroup migrations using the credentials from the original open, a program run in an attacker-controlled target can inherit root's ability to move host processes between cgroups. After a privileged operator uses --join-cgroup against that target, an unprivileged user can migrate and terminate unrelated root processes.",
           "Severity": "HIGH",
@@ -8901,7 +8901,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:0ee8b3ca9d34b52621adaa19ffb7c1bc959420e2ad9a044c73d97e1b76a4c293",
+          "Fingerprint": "sha256:1a65a3878fb1dc6a6627cfd91012188cbc35466960ca699f42edf397361a0b3b",
           "Title": "util-linux: util-linux: X-mount.subdir detached-tree resolution can escape via intermediate symlinks",
           "Description": "The X-mount.subdir option uses a detached-tree fast path on Linux 6.15 and later and passes the configured subdirectory to open_tree() with AT_SYMLINK_NOFOLLOW. That flag does not stop intermediate symlink traversal or keep resolution inside the newly mounted filesystem. A local unprivileged user with an fstab-authorized X-mount.subdir entry can attach a host path at the intended mountpoint.",
           "Severity": "HIGH",
@@ -8947,7 +8947,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:22c20add46c816cabbcf240201fcc334bc59aaed630749854471968849df327d",
+          "Fingerprint": "sha256:3661b1cf7c5d12dd7a5f38e8a7b7c2d4c49281e114fd8248f91be21c574abb3f",
           "Title": "util-linux: util-linux: restricted bind mounts do not pin the source, allowing X-mount.owner/group/mode redirection",
           "Description": "A flaw was found in util-linux. Restricted bind mounts take the source path from fstab but do not pin that source before the privileged mount. A local unprivileged user who can replace the authorized source or a writable ancestor can redirect SUID mount(8) to bind another host directory. If the fstab entry also sets X-mount.owner, X-mount.group, or X-mount.mode, root then changes ownership or mode on that redirected inode.",
           "Severity": "HIGH",
@@ -8997,7 +8997,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:f8e3c7d7c39d647191ed8a8a2ec6b04d0870c3134c08b808892017300b6a1fd0",
+          "Fingerprint": "sha256:9040b1fe91513e6d3b0448d0bfd6d9c42482d4632f746925807628b385e6ace4",
           "Title": "util-linux: util-linux: TOCTOU in the mount program when applying post-mount ownership/mode changes",
           "Description": "A flaw was found in util-linux. When an /etc/fstab entry uses the user option together with X-mount.owner, X-mount.group, or X-mount.mode, mount(8) changes ownership or permissions on the mount target after mounting without re-verifying the path. A local unprivileged user can exploit this Time-of-Check-Time-of-Use (TOCTOU) window by swapping the target directory, redirecting the ownership/permission change to an arbitrary file and potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -9042,7 +9042,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:2279331231f0adaa75765b6b4d165bc8cbd26b653c2c74ff03481c4608c10c50",
+          "Fingerprint": "sha256:a34e5eb5541b1931efcd05335919a33d4cdaef0f8b32dcf9d2038f8b5c4fa22e",
           "Title": "util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path",
           "Description": "When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -9087,7 +9087,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:7bc87fcb0d2d228dcb60dd1586fb9c82522f27379d4eaf95ed902c102e2273ff",
+          "Fingerprint": "sha256:28bab5dcae376034538f4afa0959ce10fc40b00ab2cc913e8e2f77a0486c8377",
           "Title": "util-linux: util-linux: SUID mount(8) allows nosuid/noexec bypass via LIBMOUNT_FORCE_MOUNT2",
           "Description": "A flaw was found in util-linux. The mount(8) SUID binary does not sanitize the LIBMOUNT_FORCE_MOUNT2 environment variable before use. A local unprivileged user can set this variable to force mount(8) to use the legacy two-step mount(2) code path, which applies security restrictions such as nosuid and noexec after the mount is already active. During this window, an attacker can execute a SUID binary from the mounted filesystem, allowing local privilege escalation to root.",
           "Severity": "HIGH",
@@ -9128,7 +9128,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:bb1cd12ff33b493eb7d2ae33af8da17bf439aeb916d70eb434590b1c9fe34d1a",
+          "Fingerprint": "sha256:178c20abc8b94e37667df53cd2609fbb58ed6c6bbd69a7061f3b9793c2dee38f",
           "Title": "util-linux: util-linux: failed external mount helper still runs privileged X-mount post-hooks",
           "Description": "util-linux versions through 2.41.5 and 2.42.2 fail to check mount helper exit status before running post-mount hooks, allowing unprivileged users to execute privileged operations on pre-existing filesystems. Attackers can exploit X-mount.idmap or X-mount.owner hooks to clone filesystems with inherited suid bits or modify target inode permissions after a helper fails, achieving privilege escalation.",
           "Severity": "HIGH",
@@ -9179,7 +9179,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:ddc4903c6bbf3dde73e02be185fd59887c04135f448ac7342cd727981a8f8792",
+          "Fingerprint": "sha256:fe703f9a161018ef201056c9370338d157403e3268747f07115dc59268674db3",
           "Title": "util-linux: util-linux: nsenter --join-cgroup leaks root cgroup migration authority",
           "Description": "The nsenter --join-cgroup option opens the target cgroup.procs file as root and leaves that file descriptor open across later namespace and credential changes and across execve(). Because the kernel checks later cgroup migrations using the credentials from the original open, a program run in an attacker-controlled target can inherit root's ability to move host processes between cgroups. After a privileged operator uses --join-cgroup against that target, an unprivileged user can migrate and terminate unrelated root processes.",
           "Severity": "HIGH",
@@ -9226,7 +9226,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:ff48c77f6770bc8614cd8b0a48ee989ae8cd8fee48fa201a53a4f7c22378cb6d",
+          "Fingerprint": "sha256:e9a71be962ffe95d954915f6c9d0a4e7a25e1a057d421fc5abc73c296a12f5c8",
           "Title": "util-linux: util-linux: X-mount.subdir detached-tree resolution can escape via intermediate symlinks",
           "Description": "The X-mount.subdir option uses a detached-tree fast path on Linux 6.15 and later and passes the configured subdirectory to open_tree() with AT_SYMLINK_NOFOLLOW. That flag does not stop intermediate symlink traversal or keep resolution inside the newly mounted filesystem. A local unprivileged user with an fstab-authorized X-mount.subdir entry can attach a host path at the intended mountpoint.",
           "Severity": "HIGH",
@@ -9272,7 +9272,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:d89e56b6b1ad12071de70fddf5e7ffeea0b03c1945b4b27538e89817eaa6105d",
+          "Fingerprint": "sha256:031e36f07afd432c3bca0a66a9ec586f23cd97dfd6fb475a06d011bddc9e216f",
           "Title": "util-linux: util-linux: restricted bind mounts do not pin the source, allowing X-mount.owner/group/mode redirection",
           "Description": "A flaw was found in util-linux. Restricted bind mounts take the source path from fstab but do not pin that source before the privileged mount. A local unprivileged user who can replace the authorized source or a writable ancestor can redirect SUID mount(8) to bind another host directory. If the fstab entry also sets X-mount.owner, X-mount.group, or X-mount.mode, root then changes ownership or mode on that redirected inode.",
           "Severity": "HIGH",
@@ -9319,7 +9319,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:0544539664845b9956167ff3d86a6f70cc9bf19fc914ef430e20c026265fac95",
+          "Fingerprint": "sha256:d66f570a9336e6c794cbbc014c03c004ffb90d27d560434d5040c47d246058a6",
           "Title": "ncurses: ncurses: Buffer overflow vulnerability may lead to arbitrary code execution.",
           "Description": "The infocmp command-line tool in ncurses before 6.5-20251213 has a stack-based buffer overflow in analyze_string in progs/infocmp.c.",
           "Severity": "HIGH",
@@ -9401,7 +9401,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:a9de37612f01a01c20df8278d0967fba12f28340f7d58a0e23c9d995f3b80577",
+          "Fingerprint": "sha256:c566db1e121b4b744c36c8c6d333f5674c14a6a372248296dc431882a50a2606",
           "Title": "pcre2: PCRE2: Out-of-bounds write allows arbitrary code execution via crafted regular expressions",
           "Description": "PCRE2 before 10.48 allows a pcre2_dfa_match out-of-bounds write because reuse of a cached workspace block, in a recursive DFA matching workspace, lacks a size check (even though a newly allocated block, for the same purpose, does have a size check). This outcome requires an attacker-controlled regular expression, or a recursive pattern in conjunction with a small heap limit (this can be set through the API).",
           "Severity": "HIGH",
@@ -9448,7 +9448,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:821a96fcc3ffef3c18115ce3d18e474dc72453204e67a50e5d321739dc7b9f04",
+          "Fingerprint": "sha256:6f99a216419b9566c8144b2ba848d4fb2c82d1b9356909554c8afbd573a33491",
           "Title": "pcre2: PCRE2: Memory corruption vulnerability in pcre2_jit_match",
           "Description": "In PCRE2 before 10.48, pcre2_jit_match mishandles a previously copied subject being passed in as a context. An incorrect free operation can occur.",
           "Severity": "HIGH",
@@ -9497,7 +9497,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:e0a9fe1a3644fabaafa7590e78f53d443224c43b03c800901a8ff6ce9c243d3c",
+          "Fingerprint": "sha256:2b8150f44034f7890f2793986ba99ea8e7145fbe104c9146d5ba7820768fbfdd",
           "Title": "util-linux: util-linux: TOCTOU in the mount program when applying post-mount ownership/mode changes",
           "Description": "A flaw was found in util-linux. When an /etc/fstab entry uses the user option together with X-mount.owner, X-mount.group, or X-mount.mode, mount(8) changes ownership or permissions on the mount target after mounting without re-verifying the path. A local unprivileged user can exploit this Time-of-Check-Time-of-Use (TOCTOU) window by swapping the target directory, redirecting the ownership/permission change to an arbitrary file and potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -9542,7 +9542,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:5ce31d534047213ac6782846e7df99d43ef27799fe6536920b06966aa85a8d9a",
+          "Fingerprint": "sha256:7320140129dac724b30af9130daaee1f8336bcff1ea7a2bb4910a033030384c1",
           "Title": "util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path",
           "Description": "When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -9587,7 +9587,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:a77def4db62be0e8c8fa710e679e06650d23ab32e35b54c9b95d6783ff60e737",
+          "Fingerprint": "sha256:b3905bddca74226d5254d548278e6bdef9eff9f21349f82236a7e83766522b5e",
           "Title": "util-linux: util-linux: SUID mount(8) allows nosuid/noexec bypass via LIBMOUNT_FORCE_MOUNT2",
           "Description": "A flaw was found in util-linux. The mount(8) SUID binary does not sanitize the LIBMOUNT_FORCE_MOUNT2 environment variable before use. A local unprivileged user can set this variable to force mount(8) to use the legacy two-step mount(2) code path, which applies security restrictions such as nosuid and noexec after the mount is already active. During this window, an attacker can execute a SUID binary from the mounted filesystem, allowing local privilege escalation to root.",
           "Severity": "HIGH",
@@ -9628,7 +9628,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:45482011b6c5029597563f40a18099b0ec4115ef527f3530457f24f1c57e6236",
+          "Fingerprint": "sha256:d0ef495930e72bf05350a65439dc7357c7937c9da857ebc9066a6a499776f90e",
           "Title": "util-linux: util-linux: failed external mount helper still runs privileged X-mount post-hooks",
           "Description": "util-linux versions through 2.41.5 and 2.42.2 fail to check mount helper exit status before running post-mount hooks, allowing unprivileged users to execute privileged operations on pre-existing filesystems. Attackers can exploit X-mount.idmap or X-mount.owner hooks to clone filesystems with inherited suid bits or modify target inode permissions after a helper fails, achieving privilege escalation.",
           "Severity": "HIGH",
@@ -9679,7 +9679,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:9df6f5a4ed0a5bf9e35153ef6d751fefe6ec75bff89f54ca721ffa882be86046",
+          "Fingerprint": "sha256:352c85c57cc5a4c063f38d2d4004ac4e908f043bd28fb89ec1677a63aba70820",
           "Title": "util-linux: util-linux: nsenter --join-cgroup leaks root cgroup migration authority",
           "Description": "The nsenter --join-cgroup option opens the target cgroup.procs file as root and leaves that file descriptor open across later namespace and credential changes and across execve(). Because the kernel checks later cgroup migrations using the credentials from the original open, a program run in an attacker-controlled target can inherit root's ability to move host processes between cgroups. After a privileged operator uses --join-cgroup against that target, an unprivileged user can migrate and terminate unrelated root processes.",
           "Severity": "HIGH",
@@ -9726,7 +9726,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:484b091428eda3758ccd88ec7d680da09dc4beffec494871631f9d84e72076c0",
+          "Fingerprint": "sha256:b699a3bc3e3dc3047a37a9e9e05b10ccbe72dfb728ab04e9187e392492e18bb4",
           "Title": "util-linux: util-linux: X-mount.subdir detached-tree resolution can escape via intermediate symlinks",
           "Description": "The X-mount.subdir option uses a detached-tree fast path on Linux 6.15 and later and passes the configured subdirectory to open_tree() with AT_SYMLINK_NOFOLLOW. That flag does not stop intermediate symlink traversal or keep resolution inside the newly mounted filesystem. A local unprivileged user with an fstab-authorized X-mount.subdir entry can attach a host path at the intended mountpoint.",
           "Severity": "HIGH",
@@ -9772,7 +9772,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:efae67e9c34be2b230399446a435ff50662d2eb0d3bc9af94e3b460100d08657",
+          "Fingerprint": "sha256:27dd3172cf5fa9973aecd1a512ebbb4b1c70513607b9cd3d5cedca578c530da2",
           "Title": "util-linux: util-linux: restricted bind mounts do not pin the source, allowing X-mount.owner/group/mode redirection",
           "Description": "A flaw was found in util-linux. Restricted bind mounts take the source path from fstab but do not pin that source before the privileged mount. A local unprivileged user who can replace the authorized source or a writable ancestor can redirect SUID mount(8) to bind another host directory. If the fstab entry also sets X-mount.owner, X-mount.group, or X-mount.mode, root then changes ownership or mode on that redirected inode.",
           "Severity": "HIGH",
@@ -9819,7 +9819,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:d6312b30fc45158eb8368e67d1cf4f59de0b96da95d98a4d4b3c5e1fd61aecbd",
+          "Fingerprint": "sha256:59a28de4069be3fb1b0fd0421638c7000d94780836358c10d0bd4309807c3233",
           "Title": "sqlite: SQLite: Arbitrary code execution via crafted FTS5 full-text search data",
           "Description": "SQLite before 3.53.2 contains memory corruption vulnerabilities in the FTS5 full-text search extension that allow attackers to cause process crashes, memory exhaustion, or arbitrary code execution by supplying a crafted database with malformed FTS5 page data. Attackers can trigger an out-of-bounds read in fts5LeafSeek() via an attacker-controlled loop bound and a heap buffer overflow write in fts5ChunkIterate() through a crafted continuation page causing an integer underflow, exploitable when an FTS5 MATCH query is executed against the malicious database.",
           "Severity": "HIGH",
@@ -9890,7 +9890,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:d2e72aab9552eacdc7b826431aca577dfa045e972412b1cfc99ddc5d46fb9be3",
+          "Fingerprint": "sha256:59f5a82f63d408af7c94408c46276a175335f46527773c862ac671fed505123b",
           "Title": "sqlite: SQLite: Arbitrary code execution and crash via heap-based buffer overflow in FTS5",
           "Description": "SQLite before 3.53.2 contains a heap-based buffer overflow vulnerability in the FTS5 full-text search extension that allows attackers to cause a crash or execute arbitrary code by supplying a crafted database with malicious continuation page metadata specifying a szLeaf value smaller than 4. Attackers can trigger an integer underflow in fts5ChunkIterate() causing an inflated remaining byte count during FTS5 MATCH query processing, leading to a heap buffer overflow of attacker-controlled data in applications compiled with SQLITE_ENABLE_FTS5.",
           "Severity": "HIGH",
@@ -9965,7 +9965,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:9a632025921c991d3f635a187ae9b44a5a689633bd569964548197dd23118008",
+          "Fingerprint": "sha256:2e47bcf424a2b738e5c5177c9c1e8ebe21427d86793a5eb52c8a402734018115",
           "Title": "openssl: OpenSSL: Heap buffer overflow on 32-bit systems from large X.509 certificate processing",
           "Description": "Issue summary: Converting an excessively large OCTET STRING value to\na hexadecimal string leads to a heap buffer overflow on 32 bit platforms.\n\nImpact summary: A heap buffer overflow may lead to a crash or possibly\nan attacker controlled code execution or other undefined behavior.\n\nIf an attacker can supply a crafted X.509 certificate with an excessively\nlarge OCTET STRING value in extensions such as the Subject Key Identifier\n(SKID) or Authority Key Identifier (AKID) which are being converted to hex,\nthe size of the buffer needed for the result is calculated as multiplication\nof the input length by 3. On 32 bit platforms, this multiplication may overflow\nresulting in the allocation of a smaller buffer and a heap buffer overflow.\n\nApplications and services that print or log contents of untrusted X.509\ncertificates are vulnerable to this issue. As the certificates would have\nto have sizes of over 1 Gigabyte, printing or logging such certificates\nis a fairly unlikely operation and only 32 bit platforms are affected,\nthis issue was assigned Low severity.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary.",
           "Severity": "CRITICAL",
@@ -10035,7 +10035,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:f941ef52c9a9d6c78bd23d7e831e358ea93f66ab3d976dc9d434b0d0ba13ae80",
+          "Fingerprint": "sha256:3a0567c47dd3476eba473489da885678b07fb956f18329d4667ccbe2767966c3",
           "Title": "openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing",
           "Description": "Issue summary: Parsing CMS AuthEnvelopedData or EnvelopedData message with\nmaliciously crafted AEAD parameters can trigger a stack buffer overflow.\n\nImpact summary: A stack buffer overflow may lead to a crash, causing Denial\nof Service, or potentially remote code execution.\n\nWhen parsing CMS (Auth)EnvelopedData structures that use AEAD ciphers such as\nAES-GCM, the IV (Initialization Vector) encoded in the ASN.1 parameters is\ncopied into a fixed-size stack buffer without verifying that its length fits\nthe destination. An attacker can supply a crafted CMS message with an\noversized IV, causing a stack-based out-of-bounds write before any\nauthentication or tag verification occurs.\n\nApplications and services that parse untrusted CMS or PKCS#7 content using\nAEAD ciphers (e.g., S/MIME (Auth)EnvelopedData with AES-GCM) are vulnerable.\nBecause the overflow occurs prior to authentication, no valid key material\nis required to trigger it. While exploitability to remote code execution\ndepends on platform and toolchain mitigations, the stack-based write\nprimitive represents a severe risk.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the CMS implementation is outside the OpenSSL FIPS module\nboundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3 and 3.0 are vulnerable to this issue.\n\nOpenSSL 1.1.1 and 1.0.2 are not affected by this issue.",
           "Severity": "HIGH",
@@ -10177,7 +10177,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:dcb89a227e74a4429445cfc334d4883bcb168926b2ecf598c430c46c200d88d1",
+          "Fingerprint": "sha256:6237c9c524e19add43eb95aed180532d431f3afc6ec86679a2bc34e2be7ee2b6",
           "Title": "openssl: OpenSSL: Denial of Service via malformed PKCS#12 file processing",
           "Description": "Issue summary: Processing a malformed PKCS#12 file can trigger a NULL pointer\ndereference in the PKCS12_item_decrypt_d2i_ex() function.\n\nImpact summary: A NULL pointer dereference can trigger a crash which leads to\nDenial of Service for an application processing PKCS#12 files.\n\nThe PKCS12_item_decrypt_d2i_ex() function does not check whether the oct\nparameter is NULL before dereferencing it. When called from\nPKCS12_unpack_p7encdata() with a malformed PKCS#12 file, this parameter can\nbe NULL, causing a crash. The vulnerability is limited to Denial of Service\nand cannot be escalated to achieve code execution or memory disclosure.\n\nExploiting this issue requires an attacker to provide a malformed PKCS#12 file\nto an application that processes it. For that reason the issue was assessed as\nLow severity according to our Security Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the PKCS#12 implementation is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.",
           "Severity": "HIGH",
@@ -10294,7 +10294,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:952ce7e24c5ed5f2f647888a6787a759e57e76b10e4650beee3f35386452ffc8",
+          "Fingerprint": "sha256:2437f5cd7be71e239d2372dfe905dc2b2c679ea9a2bc8b08d678b3172de9d833",
           "Title": "openssl: OpenSSL: Denial of Service via unbounded memory growth in QUIC server",
           "Description": "Issue summary: When an OpenSSL QUIC server (Listener SSL object) processes\nvalid QUIC Initial packets for unknown destination connection IDs, it\ncan allocate and queue new incoming channels without enforcing any limit.\n\nImpact summary: A remote peer that can make many Initial packets reach the\nserver listener faster than the application accepts connections, can cause the\nmemory allocated to store the per-channel state to grow without any limits,\npotentially making the QUIC listener unavailable and causing Denial of Service.\n\nCWE: CWE-770: Allocation of Resources Without Limits or Throttling\n\nDescription: The function that handles inbound QUIC packets uses\nConnection-Id from the packet header to find an existing connection\n(QUIC channel). If no existing connection is found and the packet\ntype is INITIAL, the function treats the packet as a new connection. It\nallocates a new channel object and inserts it into a queue where it\nwaits to be accepted by the local application with SSL_accept(3ossl).\nThe memory occupied by these initial channel objects may grow\nwithout bounds if the application is not able to call SSL_accept()\nfrequently enough to serve these inbound connection requests.\n\nThe issue is present since OpenSSL 3.5 when the QUIC server implementation\nwas added.\n\nThe fix introduces a limit for pending connections. The default limit is set\nto 256 pending connections (waiting to be accepted by the local application).\nApplications may change the default by calling SSL_set_value_uint(3ossl).\n\nFIPS impact: no\nThe FIPS module is not affected as the QUIC implementation is outside of\nthe OpenSSL FIPS module boundary.",
           "Severity": "HIGH",
@@ -10366,7 +10366,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:89d21f050afedfd3633d7f6ec244a87407a0f0f6f8ef527e5c09d12af522b4e2",
+          "Fingerprint": "sha256:0aba9734d7f87397b800ee924c51346b2d08d78a98517427fe5d5e01a1cd5dc6",
           "Title": "openssl: OpenSSL: Arbitrary code execution due to use-after-free in DANE TLSA authentication",
           "Description": "Issue summary: An uncommon configuration of clients performing DANE TLSA-based\nserver authentication, when paired with uncommon server DANE TLSA records, may\nresult in a use-after-free and/or double-free on the client side.\n\nImpact summary: A use after free can have a range of potential consequences\nsuch as the corruption of valid data, crashes or execution of arbitrary code.\n\nHowever, the issue only affects clients that make use of TLSA records with both\nthe PKIX-TA(0/PKIX-EE(1) certificate usages and the DANE-TA(2) certificate\nusage.\n\nBy far the most common deployment of DANE is in SMTP MTAs for which RFC7672\nrecommends that clients treat as 'unusable' any TLSA records that have the PKIX\ncertificate usages.  These SMTP (or other similar) clients are not vulnerable\nto this issue.  Conversely, any clients that support only the PKIX usages, and\nignore the DANE-TA(2) usage are also not vulnerable.\n\nThe client would also need to be communicating with a server that publishes a\nTLSA RRset with both types of TLSA records.\n\nNo FIPS modules are affected by this issue, the problem code is outside the\nFIPS module boundary.",
           "Severity": "HIGH",
@@ -10439,7 +10439,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:456e20bd8609e62545fec83855575290e602d272b4e3b539a15de14df4eb715d",
+          "Fingerprint": "sha256:aad70e92e6255d909a46fd5e1ed870f8ce6a9f7aa4f2fe0e6ba571f569f0ebd8",
           "Title": "openssl: OpenSSL: Denial of Service due to NULL pointer dereference in delta CRL processing",
           "Description": "Issue summary: When a delta CRL that contains a Delta CRL Indicator extension\nis processed a NULL pointer dereference might happen if the required CRL\nNumber extension is missing.\n\nImpact summary: A NULL pointer dereference can trigger a crash which\nleads to a Denial of Service for an application.\n\nWhen CRL processing and delta CRL processing is enabled during X.509\ncertificate verification, the delta CRL processing does not check\nwhether the CRL Number extension is NULL before dereferencing it.\nWhen a malformed delta CRL file is being processed, this parameter\ncan be NULL, causing a NULL pointer dereference.\n\nExploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in\nthe verification context, the certificate being verified to contain a\nfreshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and\nan attacker to provide a malformed CRL to an application that processes it.\n\nThe vulnerability is limited to Denial of Service and cannot be escalated to\nachieve code execution or memory disclosure. For that reason the issue was\nassessed as Low severity according to our Security Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the affected code is outside the OpenSSL FIPS module boundary.",
           "Severity": "HIGH",
@@ -10512,7 +10512,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:720309961e0a2b297368b4ebf37bfce6cedfa31daa8eb23da9c68e679b9c652c",
+          "Fingerprint": "sha256:bb5390a39e37f71d7f3ba4b0988558e8abe5162d93e45f49ad9ca05e290e0f9a",
           "Title": "openssl: OpenSSL: Denial of Service vulnerability in CMS processing",
           "Description": "Issue summary: During processing of a crafted CMS EnvelopedData message\nwith KeyAgreeRecipientInfo a NULL pointer dereference can happen.\n\nImpact summary: Applications that process attacker-controlled CMS data may\ncrash before authentication or cryptographic operations occur resulting in\nDenial of Service.\n\nWhen a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is\nprocessed, the optional parameters field of KeyEncryptionAlgorithmIdentifier\nis examined without checking for its presence. This results in a NULL\npointer dereference if the field is missing.\n\nApplications and services that call CMS_decrypt() on untrusted input\n(e.g., S/MIME processing or CMS-based protocols) are vulnerable.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary.",
           "Severity": "HIGH",
@@ -10586,7 +10586,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:114587a75c980618166e22e21613bb8d451cc27d746ba88d6a4c64a102adfb4a",
+          "Fingerprint": "sha256:5d2d353f690d50679fdf70380ac091510c803bff1032abaee74e621992f08f14",
           "Title": "openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing",
           "Description": "Issue summary: During processing of a crafted CMS EnvelopedData message\nwith KeyTransportRecipientInfo a NULL pointer dereference can happen.\n\nImpact summary: Applications that process attacker-controlled CMS data may\ncrash before authentication or cryptographic operations occur resulting in\nDenial of Service.\n\nWhen a CMS EnvelopedData message that uses KeyTransportRecipientInfo with\nRSA-OAEP encryption is processed, the optional parameters field of\nRSA-OAEP SourceFunc algorithm identifier is examined without checking\nfor its presence. This results in a NULL pointer dereference if the field\nis missing.\n\nApplications and services that call CMS_decrypt() on untrusted input\n(e.g., S/MIME processing or CMS-based protocols) are vulnerable.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary.",
           "Severity": "HIGH",
@@ -10671,7 +10671,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:1d8824ea6c24302bd1399a684765f01608ba3508900dc0db298c0afb7780c4af",
+          "Fingerprint": "sha256:2349d728dfb4532525a646f99bb57e527957540b9d9eede60431e741dfb55a5a",
           "Title": "openssl: Heap Use-After-Free in OpenSSL PKCS7_verify()",
           "Description": "Issue summary: A specially crafted PKCS#7 or S/MIME signed message could\ntrigger a use-after-free during PKCS#7 signature verification.\n\nImpact summary: A use-after-free may result in process crashes, heap\ncorruption, or potentially remote code execution.\n\nWhen processing a PKCS#7 or S/MIME signed message, if the SignedData\ndigestAlgorithms field is present as an empty ASN.1 SET, OpenSSL may\nincorrectly free a caller-owned BIO during PKCS7_verify(). A subsequent\nuse of the BIO by the calling application results in a use-after-free\ncondition.\n\nIn the common case this occurs when the application later calls\nBIO_free() on the BIO originally passed to PKCS7_verify(). Depending\non allocator behavior and application-specific BIO usage patterns, this\nmay result in a crash or other memory corruption. In some application\ncontexts this may potentially be exploitable for remote code execution.\n\nApplications that process PKCS#7 or S/MIME signed messages using OpenSSL\nPKCS#7 APIs may be affected. Applications using the CMS APIs for this\nprocessing are not affected.\n\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary.",
           "Severity": "HIGH",
@@ -10797,7 +10797,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:9054da286c4b9d8accef20d7514d4dc087061298b7e64cef37f2c2e4c702221e",
+          "Fingerprint": "sha256:d54c67d5acf6c50a72535ca0411348cf440e804dd4e46a9e7f9bcdd9817424ef",
           "Title": "systemd: systemd-homed: Local privilege escalation via missing home-record signature verification",
           "Description": "systemd-homed contains a local privilege escalation bug via arbitrary system group addition to a local, logged in, homed-managed user",
           "Severity": "HIGH",
@@ -10846,7 +10846,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:a241e692bfea1d19ece7ecb51140222550daf8c79c209b5a2bd5e5eede5f3433",
+          "Fingerprint": "sha256:fa6cf957ababfb6d5a3cffd7a88706d05e7c48c73a198ed19409242b28c7c983",
           "Title": "ncurses: ncurses: Buffer overflow vulnerability may lead to arbitrary code execution.",
           "Description": "The infocmp command-line tool in ncurses before 6.5-20251213 has a stack-based buffer overflow in analyze_string in progs/infocmp.c.",
           "Severity": "HIGH",
@@ -10927,7 +10927,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:42567069f944ae5039f33216de985ea7248eb5dcb867afd3746040639413eac1",
+          "Fingerprint": "sha256:18ce1b281eefe080da168f5a5faa4d4182274dc8ca89f6bdd4dafb668843a4b2",
           "Title": "systemd: systemd-homed: Local privilege escalation via missing home-record signature verification",
           "Description": "systemd-homed contains a local privilege escalation bug via arbitrary system group addition to a local, logged in, homed-managed user",
           "Severity": "HIGH",
@@ -10979,7 +10979,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:934ab0176d9aa1f015556d53370cd3003c1346e4df8259cdd0f0267aaed2830e",
+          "Fingerprint": "sha256:a4446906d09951133cdac59e3b06fbcf7d5418e71c9f6e4560554f921715845e",
           "Title": "util-linux: util-linux: TOCTOU in the mount program when applying post-mount ownership/mode changes",
           "Description": "A flaw was found in util-linux. When an /etc/fstab entry uses the user option together with X-mount.owner, X-mount.group, or X-mount.mode, mount(8) changes ownership or permissions on the mount target after mounting without re-verifying the path. A local unprivileged user can exploit this Time-of-Check-Time-of-Use (TOCTOU) window by swapping the target directory, redirecting the ownership/permission change to an arbitrary file and potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -11024,7 +11024,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:52e170b76fb66ef438a4ddea2e3800670a6f6b9555adcb4a47124c206a490041",
+          "Fingerprint": "sha256:988f1ad85980d7921049312b84dc0dcd52d3b59d910bc486cc572b864a64fc80",
           "Title": "util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path",
           "Description": "When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -11069,7 +11069,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:6726d91fcb027aacfcb1d56ab4911a9340cdcda17d8dbfc68be29b005e3852ab",
+          "Fingerprint": "sha256:1c9ad2dab4f94976f5efebe49569773f8c4671448d3c0d1a042bc72fc9bf7cf4",
           "Title": "util-linux: util-linux: SUID mount(8) allows nosuid/noexec bypass via LIBMOUNT_FORCE_MOUNT2",
           "Description": "A flaw was found in util-linux. The mount(8) SUID binary does not sanitize the LIBMOUNT_FORCE_MOUNT2 environment variable before use. A local unprivileged user can set this variable to force mount(8) to use the legacy two-step mount(2) code path, which applies security restrictions such as nosuid and noexec after the mount is already active. During this window, an attacker can execute a SUID binary from the mounted filesystem, allowing local privilege escalation to root.",
           "Severity": "HIGH",
@@ -11110,7 +11110,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:c64baec0d828fe23a527e8f93a7903fa9c3a92a5da4d388ae3a9d0a6e9235bd1",
+          "Fingerprint": "sha256:3a1403b626ee774f816bd6e3c5faea1f8dfa65d85611efdc1cba4f900b14aa61",
           "Title": "util-linux: util-linux: failed external mount helper still runs privileged X-mount post-hooks",
           "Description": "util-linux versions through 2.41.5 and 2.42.2 fail to check mount helper exit status before running post-mount hooks, allowing unprivileged users to execute privileged operations on pre-existing filesystems. Attackers can exploit X-mount.idmap or X-mount.owner hooks to clone filesystems with inherited suid bits or modify target inode permissions after a helper fails, achieving privilege escalation.",
           "Severity": "HIGH",
@@ -11161,7 +11161,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:d81d3c5b9b6a64dab387de37fdff6257f47ff3349216d7d2dc384ba07b91fd0c",
+          "Fingerprint": "sha256:a88db50326e362b01a89e43e0ba7fe4c16ea1e7764bc8d441383a984f7435d3a",
           "Title": "util-linux: util-linux: nsenter --join-cgroup leaks root cgroup migration authority",
           "Description": "The nsenter --join-cgroup option opens the target cgroup.procs file as root and leaves that file descriptor open across later namespace and credential changes and across execve(). Because the kernel checks later cgroup migrations using the credentials from the original open, a program run in an attacker-controlled target can inherit root's ability to move host processes between cgroups. After a privileged operator uses --join-cgroup against that target, an unprivileged user can migrate and terminate unrelated root processes.",
           "Severity": "HIGH",
@@ -11208,7 +11208,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:621ddd950e297cdc046eda3346bff7e4c2b541208d67efa4e732b576dabc524e",
+          "Fingerprint": "sha256:91537a9180e44f08c0c1f9603b1b7a1092443e0e54f4ca867fbc94b2c393dc0e",
           "Title": "util-linux: util-linux: X-mount.subdir detached-tree resolution can escape via intermediate symlinks",
           "Description": "The X-mount.subdir option uses a detached-tree fast path on Linux 6.15 and later and passes the configured subdirectory to open_tree() with AT_SYMLINK_NOFOLLOW. That flag does not stop intermediate symlink traversal or keep resolution inside the newly mounted filesystem. A local unprivileged user with an fstab-authorized X-mount.subdir entry can attach a host path at the intended mountpoint.",
           "Severity": "HIGH",
@@ -11254,7 +11254,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:7fda6b38d21c58955ab4a418a0dc39635173d53bbe0ffb74fcbc3abaa9b6050a",
+          "Fingerprint": "sha256:11995e630a8c3879bccd7e2e87ac266115222d3d762f4a0909612c9b273138da",
           "Title": "util-linux: util-linux: restricted bind mounts do not pin the source, allowing X-mount.owner/group/mode redirection",
           "Description": "A flaw was found in util-linux. Restricted bind mounts take the source path from fstab but do not pin that source before the privileged mount. A local unprivileged user who can replace the authorized source or a writable ancestor can redirect SUID mount(8) to bind another host directory. If the fstab entry also sets X-mount.owner, X-mount.group, or X-mount.mode, root then changes ownership or mode on that redirected inode.",
           "Severity": "HIGH",
@@ -11304,7 +11304,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:8a0abf6f810cfde69bb22958a84572a34ca280a1c02a48b4735196016525e73e",
+          "Fingerprint": "sha256:5d51ae212a7620c6cc97f6da628c3554649bd1dfe0ac8e2d6cccea8fa24ce27e",
           "Title": "util-linux: util-linux: TOCTOU in the mount program when applying post-mount ownership/mode changes",
           "Description": "A flaw was found in util-linux. When an /etc/fstab entry uses the user option together with X-mount.owner, X-mount.group, or X-mount.mode, mount(8) changes ownership or permissions on the mount target after mounting without re-verifying the path. A local unprivileged user can exploit this Time-of-Check-Time-of-Use (TOCTOU) window by swapping the target directory, redirecting the ownership/permission change to an arbitrary file and potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -11349,7 +11349,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:53b3ab6539cc9c357f1f6dace2b263717360142d80fca4722c6cc4a7bcfe90a4",
+          "Fingerprint": "sha256:f1ee13b6b89ab35fda5257676f5a468733bdca82d3f51f7c671a8258be307fd1",
           "Title": "util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path",
           "Description": "When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -11394,7 +11394,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:b950617e822dd7878796e01f6e3c9eece4b86d6cfef7e9f0424f423749a45a2d",
+          "Fingerprint": "sha256:6a33b95b77bbeebb798f87b60aca9565a22c053fde28224ed9d7fbe66c5db391",
           "Title": "util-linux: util-linux: SUID mount(8) allows nosuid/noexec bypass via LIBMOUNT_FORCE_MOUNT2",
           "Description": "A flaw was found in util-linux. The mount(8) SUID binary does not sanitize the LIBMOUNT_FORCE_MOUNT2 environment variable before use. A local unprivileged user can set this variable to force mount(8) to use the legacy two-step mount(2) code path, which applies security restrictions such as nosuid and noexec after the mount is already active. During this window, an attacker can execute a SUID binary from the mounted filesystem, allowing local privilege escalation to root.",
           "Severity": "HIGH",
@@ -11435,7 +11435,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:95113af3c8de4a085728a412e27a59b3aad88aa0645de5afe2180019581578da",
+          "Fingerprint": "sha256:9b0293a1ca99f4fb8ac0683071b3defda37271ebac8d6ee02523852c66c77b7c",
           "Title": "util-linux: util-linux: failed external mount helper still runs privileged X-mount post-hooks",
           "Description": "util-linux versions through 2.41.5 and 2.42.2 fail to check mount helper exit status before running post-mount hooks, allowing unprivileged users to execute privileged operations on pre-existing filesystems. Attackers can exploit X-mount.idmap or X-mount.owner hooks to clone filesystems with inherited suid bits or modify target inode permissions after a helper fails, achieving privilege escalation.",
           "Severity": "HIGH",
@@ -11486,7 +11486,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:862b702d8d4ab6f37f381a3eb8f991a01f0ac9b58b0826f215ac182ce6bdc3d8",
+          "Fingerprint": "sha256:d41a5d6da887a718063b24880dbf62da218915cf8c0005b2a9c1ca9dd0c01b8c",
           "Title": "util-linux: util-linux: nsenter --join-cgroup leaks root cgroup migration authority",
           "Description": "The nsenter --join-cgroup option opens the target cgroup.procs file as root and leaves that file descriptor open across later namespace and credential changes and across execve(). Because the kernel checks later cgroup migrations using the credentials from the original open, a program run in an attacker-controlled target can inherit root's ability to move host processes between cgroups. After a privileged operator uses --join-cgroup against that target, an unprivileged user can migrate and terminate unrelated root processes.",
           "Severity": "HIGH",
@@ -11533,7 +11533,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:ac796a398a2d6e5d138daeea828de769b8c9b2d41eea62c82cd42097798230da",
+          "Fingerprint": "sha256:00cd8563b3aaad9a6b65bf63a3fb373b7febe7372a386f6d7338158520e0d7be",
           "Title": "util-linux: util-linux: X-mount.subdir detached-tree resolution can escape via intermediate symlinks",
           "Description": "The X-mount.subdir option uses a detached-tree fast path on Linux 6.15 and later and passes the configured subdirectory to open_tree() with AT_SYMLINK_NOFOLLOW. That flag does not stop intermediate symlink traversal or keep resolution inside the newly mounted filesystem. A local unprivileged user with an fstab-authorized X-mount.subdir entry can attach a host path at the intended mountpoint.",
           "Severity": "HIGH",
@@ -11579,7 +11579,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:e43b0591570198c86c6c56101049841e103ca2b405a04f6ed149f3d41e653c0b",
+          "Fingerprint": "sha256:7c9189d3054daba04c13687b0659a9cbd0f5f03e40a0e256881e347f89dd629b",
           "Title": "util-linux: util-linux: restricted bind mounts do not pin the source, allowing X-mount.owner/group/mode redirection",
           "Description": "A flaw was found in util-linux. Restricted bind mounts take the source path from fstab but do not pin that source before the privileged mount. A local unprivileged user who can replace the authorized source or a writable ancestor can redirect SUID mount(8) to bind another host directory. If the fstab entry also sets X-mount.owner, X-mount.group, or X-mount.mode, root then changes ownership or mode on that redirected inode.",
           "Severity": "HIGH",
@@ -11629,7 +11629,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:698cbcae61ad8853027a35283b182caf1734eacb45ef728ed43b919cf2e2bef8",
+          "Fingerprint": "sha256:4f7ef459fb9d850375a011c62ec9df05c1c6187fe593cacd59a90fe81b2ce929",
           "Title": "util-linux: util-linux: TOCTOU in the mount program when applying post-mount ownership/mode changes",
           "Description": "A flaw was found in util-linux. When an /etc/fstab entry uses the user option together with X-mount.owner, X-mount.group, or X-mount.mode, mount(8) changes ownership or permissions on the mount target after mounting without re-verifying the path. A local unprivileged user can exploit this Time-of-Check-Time-of-Use (TOCTOU) window by swapping the target directory, redirecting the ownership/permission change to an arbitrary file and potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -11674,7 +11674,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:4724d76ff4726001aa1710d8d75aaa54ae023c2d680ebf1dfd3094969d9c5a6a",
+          "Fingerprint": "sha256:8e99b1cac4c8aefcd07e202a3847b5514788ec5262769c45c8eda60cb335f788",
           "Title": "util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path",
           "Description": "When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -11719,7 +11719,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:a3f0f2ecc4720814725ffff8a43c107254a994b9de2bb7c55fc11742b7e4a848",
+          "Fingerprint": "sha256:7841875ddbaf8d9fbe10e57ff64990cc4c2f1f923f0e8372382b83bf797195d0",
           "Title": "util-linux: util-linux: SUID mount(8) allows nosuid/noexec bypass via LIBMOUNT_FORCE_MOUNT2",
           "Description": "A flaw was found in util-linux. The mount(8) SUID binary does not sanitize the LIBMOUNT_FORCE_MOUNT2 environment variable before use. A local unprivileged user can set this variable to force mount(8) to use the legacy two-step mount(2) code path, which applies security restrictions such as nosuid and noexec after the mount is already active. During this window, an attacker can execute a SUID binary from the mounted filesystem, allowing local privilege escalation to root.",
           "Severity": "HIGH",
@@ -11760,7 +11760,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:c8bb8deeb019e46371688b25b6f33b2751ec83d7eb56f085a26ec5403447b3ca",
+          "Fingerprint": "sha256:bf4b077f964db021694b1b44bf95756fcce0c4083ab8c4f76affeba0c9d3d9a9",
           "Title": "util-linux: util-linux: failed external mount helper still runs privileged X-mount post-hooks",
           "Description": "util-linux versions through 2.41.5 and 2.42.2 fail to check mount helper exit status before running post-mount hooks, allowing unprivileged users to execute privileged operations on pre-existing filesystems. Attackers can exploit X-mount.idmap or X-mount.owner hooks to clone filesystems with inherited suid bits or modify target inode permissions after a helper fails, achieving privilege escalation.",
           "Severity": "HIGH",
@@ -11811,7 +11811,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:b8e1da6f8a025f815fee1ede23a7e3dfe87f5136e4c06aa927ca0d731afb7289",
+          "Fingerprint": "sha256:afd73eb6cd51ba0f931443709f5ffa8b24d97f7f6f4a6e77678b061ba82ea1c3",
           "Title": "util-linux: util-linux: nsenter --join-cgroup leaks root cgroup migration authority",
           "Description": "The nsenter --join-cgroup option opens the target cgroup.procs file as root and leaves that file descriptor open across later namespace and credential changes and across execve(). Because the kernel checks later cgroup migrations using the credentials from the original open, a program run in an attacker-controlled target can inherit root's ability to move host processes between cgroups. After a privileged operator uses --join-cgroup against that target, an unprivileged user can migrate and terminate unrelated root processes.",
           "Severity": "HIGH",
@@ -11858,7 +11858,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:4993dda58c06ee51b87c818a48c0ba296e838b95d7025872830e482d8d4deaca",
+          "Fingerprint": "sha256:36eff1933f9d8a8d58cf6cc89de6f2ae969aa0438b2764aff5beba84072ea07a",
           "Title": "util-linux: util-linux: X-mount.subdir detached-tree resolution can escape via intermediate symlinks",
           "Description": "The X-mount.subdir option uses a detached-tree fast path on Linux 6.15 and later and passes the configured subdirectory to open_tree() with AT_SYMLINK_NOFOLLOW. That flag does not stop intermediate symlink traversal or keep resolution inside the newly mounted filesystem. A local unprivileged user with an fstab-authorized X-mount.subdir entry can attach a host path at the intended mountpoint.",
           "Severity": "HIGH",
@@ -11904,7 +11904,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:8c4b6130f2a6dbdce079fb0540cddf667e06f1f182c015d949b4fc3567a134f4",
+          "Fingerprint": "sha256:848af4a51f22e5a6bad7ca865e42fa87cf15c1b0be0a1dc9f30adc196dc1a200",
           "Title": "util-linux: util-linux: restricted bind mounts do not pin the source, allowing X-mount.owner/group/mode redirection",
           "Description": "A flaw was found in util-linux. Restricted bind mounts take the source path from fstab but do not pin that source before the privileged mount. A local unprivileged user who can replace the authorized source or a writable ancestor can redirect SUID mount(8) to bind another host directory. If the fstab entry also sets X-mount.owner, X-mount.group, or X-mount.mode, root then changes ownership or mode on that redirected inode.",
           "Severity": "HIGH",
@@ -11951,7 +11951,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:a51234ec6a2304ca4a5f7409af941eb876847edeb0183130b66494467e0e5cc6",
+          "Fingerprint": "sha256:603065e0683af63a57fb2627996377ecf68ea8d940e53c59bcefeba5131e818d",
           "Title": "ncurses: ncurses: Buffer overflow vulnerability may lead to arbitrary code execution.",
           "Description": "The infocmp command-line tool in ncurses before 6.5-20251213 has a stack-based buffer overflow in analyze_string in progs/infocmp.c.",
           "Severity": "HIGH",
@@ -12033,7 +12033,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:8eaf41102d3e9617385181ce5896fa52ee5427c917c647230ac670a918682053",
+          "Fingerprint": "sha256:7a91298c609629d03d380b23fc3d69aa1e49faa976bf72fe778687892b2f93fe",
           "Title": "ncurses: ncurses: Buffer overflow vulnerability may lead to arbitrary code execution.",
           "Description": "The infocmp command-line tool in ncurses before 6.5-20251213 has a stack-based buffer overflow in analyze_string in progs/infocmp.c.",
           "Severity": "HIGH",
@@ -12119,7 +12119,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:eee39bf27e44eda0d0867c389b941e6d3135e62a628df0dea6ffe673793af9ca",
+          "Fingerprint": "sha256:adb35c6c01a00a2644db0fec2d9a6a4cc049f9b7a02f0cde967b96266b296afc",
           "Title": "openssl: OpenSSL: Heap buffer overflow on 32-bit systems from large X.509 certificate processing",
           "Description": "Issue summary: Converting an excessively large OCTET STRING value to\na hexadecimal string leads to a heap buffer overflow on 32 bit platforms.\n\nImpact summary: A heap buffer overflow may lead to a crash or possibly\nan attacker controlled code execution or other undefined behavior.\n\nIf an attacker can supply a crafted X.509 certificate with an excessively\nlarge OCTET STRING value in extensions such as the Subject Key Identifier\n(SKID) or Authority Key Identifier (AKID) which are being converted to hex,\nthe size of the buffer needed for the result is calculated as multiplication\nof the input length by 3. On 32 bit platforms, this multiplication may overflow\nresulting in the allocation of a smaller buffer and a heap buffer overflow.\n\nApplications and services that print or log contents of untrusted X.509\ncertificates are vulnerable to this issue. As the certificates would have\nto have sizes of over 1 Gigabyte, printing or logging such certificates\nis a fairly unlikely operation and only 32 bit platforms are affected,\nthis issue was assigned Low severity.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary.",
           "Severity": "CRITICAL",
@@ -12189,7 +12189,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:d8fe81f46197e1e724a6dea6fea48264d629b2e0cc2b57267c68680f1c55cc61",
+          "Fingerprint": "sha256:248f3eaab3eb49d36f8249806772b66fa994072f78b4be26202e0c4333f0c048",
           "Title": "openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing",
           "Description": "Issue summary: Parsing CMS AuthEnvelopedData or EnvelopedData message with\nmaliciously crafted AEAD parameters can trigger a stack buffer overflow.\n\nImpact summary: A stack buffer overflow may lead to a crash, causing Denial\nof Service, or potentially remote code execution.\n\nWhen parsing CMS (Auth)EnvelopedData structures that use AEAD ciphers such as\nAES-GCM, the IV (Initialization Vector) encoded in the ASN.1 parameters is\ncopied into a fixed-size stack buffer without verifying that its length fits\nthe destination. An attacker can supply a crafted CMS message with an\noversized IV, causing a stack-based out-of-bounds write before any\nauthentication or tag verification occurs.\n\nApplications and services that parse untrusted CMS or PKCS#7 content using\nAEAD ciphers (e.g., S/MIME (Auth)EnvelopedData with AES-GCM) are vulnerable.\nBecause the overflow occurs prior to authentication, no valid key material\nis required to trigger it. While exploitability to remote code execution\ndepends on platform and toolchain mitigations, the stack-based write\nprimitive represents a severe risk.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the CMS implementation is outside the OpenSSL FIPS module\nboundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3 and 3.0 are vulnerable to this issue.\n\nOpenSSL 1.1.1 and 1.0.2 are not affected by this issue.",
           "Severity": "HIGH",
@@ -12331,7 +12331,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:fb6c26c8c59cd630e5305d8ad18bd43ba88dbf2787b785cc8d0d22cec232c47f",
+          "Fingerprint": "sha256:64aa87a3ddf008a2d5d60bbfa3d263f3123eca606354efc69f7470db4324b1c8",
           "Title": "openssl: OpenSSL: Denial of Service via malformed PKCS#12 file processing",
           "Description": "Issue summary: Processing a malformed PKCS#12 file can trigger a NULL pointer\ndereference in the PKCS12_item_decrypt_d2i_ex() function.\n\nImpact summary: A NULL pointer dereference can trigger a crash which leads to\nDenial of Service for an application processing PKCS#12 files.\n\nThe PKCS12_item_decrypt_d2i_ex() function does not check whether the oct\nparameter is NULL before dereferencing it. When called from\nPKCS12_unpack_p7encdata() with a malformed PKCS#12 file, this parameter can\nbe NULL, causing a crash. The vulnerability is limited to Denial of Service\nand cannot be escalated to achieve code execution or memory disclosure.\n\nExploiting this issue requires an attacker to provide a malformed PKCS#12 file\nto an application that processes it. For that reason the issue was assessed as\nLow severity according to our Security Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the PKCS#12 implementation is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.",
           "Severity": "HIGH",
@@ -12448,7 +12448,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:0bb47524e999072ae866903fa369532f005a3c9059b79475d538b2fe029aaa77",
+          "Fingerprint": "sha256:0f243cea04622137f004b7933baefa672271daa1850a898cfb6ee920c58caef2",
           "Title": "openssl: OpenSSL: Denial of Service via unbounded memory growth in QUIC server",
           "Description": "Issue summary: When an OpenSSL QUIC server (Listener SSL object) processes\nvalid QUIC Initial packets for unknown destination connection IDs, it\ncan allocate and queue new incoming channels without enforcing any limit.\n\nImpact summary: A remote peer that can make many Initial packets reach the\nserver listener faster than the application accepts connections, can cause the\nmemory allocated to store the per-channel state to grow without any limits,\npotentially making the QUIC listener unavailable and causing Denial of Service.\n\nCWE: CWE-770: Allocation of Resources Without Limits or Throttling\n\nDescription: The function that handles inbound QUIC packets uses\nConnection-Id from the packet header to find an existing connection\n(QUIC channel). If no existing connection is found and the packet\ntype is INITIAL, the function treats the packet as a new connection. It\nallocates a new channel object and inserts it into a queue where it\nwaits to be accepted by the local application with SSL_accept(3ossl).\nThe memory occupied by these initial channel objects may grow\nwithout bounds if the application is not able to call SSL_accept()\nfrequently enough to serve these inbound connection requests.\n\nThe issue is present since OpenSSL 3.5 when the QUIC server implementation\nwas added.\n\nThe fix introduces a limit for pending connections. The default limit is set\nto 256 pending connections (waiting to be accepted by the local application).\nApplications may change the default by calling SSL_set_value_uint(3ossl).\n\nFIPS impact: no\nThe FIPS module is not affected as the QUIC implementation is outside of\nthe OpenSSL FIPS module boundary.",
           "Severity": "HIGH",
@@ -12520,7 +12520,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:1b68cabfedecaa3dab5500a77bc2c7420e84b7afaba03c8995da47d86255d5e9",
+          "Fingerprint": "sha256:d8aefedb5f3b4a912a4404ba12b665b969bc05911c961fe60c2a44be76d32afe",
           "Title": "openssl: OpenSSL: Arbitrary code execution due to use-after-free in DANE TLSA authentication",
           "Description": "Issue summary: An uncommon configuration of clients performing DANE TLSA-based\nserver authentication, when paired with uncommon server DANE TLSA records, may\nresult in a use-after-free and/or double-free on the client side.\n\nImpact summary: A use after free can have a range of potential consequences\nsuch as the corruption of valid data, crashes or execution of arbitrary code.\n\nHowever, the issue only affects clients that make use of TLSA records with both\nthe PKIX-TA(0/PKIX-EE(1) certificate usages and the DANE-TA(2) certificate\nusage.\n\nBy far the most common deployment of DANE is in SMTP MTAs for which RFC7672\nrecommends that clients treat as 'unusable' any TLSA records that have the PKIX\ncertificate usages.  These SMTP (or other similar) clients are not vulnerable\nto this issue.  Conversely, any clients that support only the PKIX usages, and\nignore the DANE-TA(2) usage are also not vulnerable.\n\nThe client would also need to be communicating with a server that publishes a\nTLSA RRset with both types of TLSA records.\n\nNo FIPS modules are affected by this issue, the problem code is outside the\nFIPS module boundary.",
           "Severity": "HIGH",
@@ -12593,7 +12593,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:96d355ebba8ba79320ce7058d8a077a908d32d5bdbcdedd4fec776a75c8742c4",
+          "Fingerprint": "sha256:30fc973683aa00109e3c11f07449ba29f31935abed7798ef7bcb9286426918f9",
           "Title": "openssl: OpenSSL: Denial of Service due to NULL pointer dereference in delta CRL processing",
           "Description": "Issue summary: When a delta CRL that contains a Delta CRL Indicator extension\nis processed a NULL pointer dereference might happen if the required CRL\nNumber extension is missing.\n\nImpact summary: A NULL pointer dereference can trigger a crash which\nleads to a Denial of Service for an application.\n\nWhen CRL processing and delta CRL processing is enabled during X.509\ncertificate verification, the delta CRL processing does not check\nwhether the CRL Number extension is NULL before dereferencing it.\nWhen a malformed delta CRL file is being processed, this parameter\ncan be NULL, causing a NULL pointer dereference.\n\nExploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in\nthe verification context, the certificate being verified to contain a\nfreshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and\nan attacker to provide a malformed CRL to an application that processes it.\n\nThe vulnerability is limited to Denial of Service and cannot be escalated to\nachieve code execution or memory disclosure. For that reason the issue was\nassessed as Low severity according to our Security Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the affected code is outside the OpenSSL FIPS module boundary.",
           "Severity": "HIGH",
@@ -12666,7 +12666,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:ff5ade2cdbac2bca8770cacbc49eb3f28aee6f6eb0ab71598c5a8bf099b867f3",
+          "Fingerprint": "sha256:3ed18bb80b93808a8212f622e5d899da27d99d339fadf38f62cf90596723d943",
           "Title": "openssl: OpenSSL: Denial of Service vulnerability in CMS processing",
           "Description": "Issue summary: During processing of a crafted CMS EnvelopedData message\nwith KeyAgreeRecipientInfo a NULL pointer dereference can happen.\n\nImpact summary: Applications that process attacker-controlled CMS data may\ncrash before authentication or cryptographic operations occur resulting in\nDenial of Service.\n\nWhen a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is\nprocessed, the optional parameters field of KeyEncryptionAlgorithmIdentifier\nis examined without checking for its presence. This results in a NULL\npointer dereference if the field is missing.\n\nApplications and services that call CMS_decrypt() on untrusted input\n(e.g., S/MIME processing or CMS-based protocols) are vulnerable.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary.",
           "Severity": "HIGH",
@@ -12740,7 +12740,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:b064c286aaa51b53b040aafbfabf52ab3a879aea2472f1e78163247a2ce56825",
+          "Fingerprint": "sha256:b60d2ed13a18f0fbe72582fa230a95cc61086cde296e47d67274583a0eef5a22",
           "Title": "openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing",
           "Description": "Issue summary: During processing of a crafted CMS EnvelopedData message\nwith KeyTransportRecipientInfo a NULL pointer dereference can happen.\n\nImpact summary: Applications that process attacker-controlled CMS data may\ncrash before authentication or cryptographic operations occur resulting in\nDenial of Service.\n\nWhen a CMS EnvelopedData message that uses KeyTransportRecipientInfo with\nRSA-OAEP encryption is processed, the optional parameters field of\nRSA-OAEP SourceFunc algorithm identifier is examined without checking\nfor its presence. This results in a NULL pointer dereference if the field\nis missing.\n\nApplications and services that call CMS_decrypt() on untrusted input\n(e.g., S/MIME processing or CMS-based protocols) are vulnerable.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary.",
           "Severity": "HIGH",
@@ -12825,7 +12825,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:e86dd7d9fb253f23c5ec6e294cea8783b7113e8f0577f2eceda3d5d2ee3e0f2c",
+          "Fingerprint": "sha256:bc9987876425bd29435f174b1c798c953dcb2f780508965002c5acd644289077",
           "Title": "openssl: Heap Use-After-Free in OpenSSL PKCS7_verify()",
           "Description": "Issue summary: A specially crafted PKCS#7 or S/MIME signed message could\ntrigger a use-after-free during PKCS#7 signature verification.\n\nImpact summary: A use-after-free may result in process crashes, heap\ncorruption, or potentially remote code execution.\n\nWhen processing a PKCS#7 or S/MIME signed message, if the SignedData\ndigestAlgorithms field is present as an empty ASN.1 SET, OpenSSL may\nincorrectly free a caller-owned BIO during PKCS7_verify(). A subsequent\nuse of the BIO by the calling application results in a use-after-free\ncondition.\n\nIn the common case this occurs when the application later calls\nBIO_free() on the BIO originally passed to PKCS7_verify(). Depending\non allocator behavior and application-specific BIO usage patterns, this\nmay result in a crash or other memory corruption. In some application\ncontexts this may potentially be exploitable for remote code execution.\n\nApplications that process PKCS#7 or S/MIME signed messages using OpenSSL\nPKCS#7 APIs may be affected. Applications using the CMS APIs for this\nprocessing are not affected.\n\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary.",
           "Severity": "HIGH",
@@ -12956,7 +12956,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:8fe6112bac73b19a3932e94e44de58eb01314804c8611988fe9e72ab7f04a7fd",
+          "Fingerprint": "sha256:7f25c7bf0089d8f86d4d05b23a20540013a5bd23b0b7bb810c44e45108f7bd63",
           "Title": "openssl: OpenSSL: Heap buffer overflow on 32-bit systems from large X.509 certificate processing",
           "Description": "Issue summary: Converting an excessively large OCTET STRING value to\na hexadecimal string leads to a heap buffer overflow on 32 bit platforms.\n\nImpact summary: A heap buffer overflow may lead to a crash or possibly\nan attacker controlled code execution or other undefined behavior.\n\nIf an attacker can supply a crafted X.509 certificate with an excessively\nlarge OCTET STRING value in extensions such as the Subject Key Identifier\n(SKID) or Authority Key Identifier (AKID) which are being converted to hex,\nthe size of the buffer needed for the result is calculated as multiplication\nof the input length by 3. On 32 bit platforms, this multiplication may overflow\nresulting in the allocation of a smaller buffer and a heap buffer overflow.\n\nApplications and services that print or log contents of untrusted X.509\ncertificates are vulnerable to this issue. As the certificates would have\nto have sizes of over 1 Gigabyte, printing or logging such certificates\nis a fairly unlikely operation and only 32 bit platforms are affected,\nthis issue was assigned Low severity.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary.",
           "Severity": "CRITICAL",
@@ -13026,7 +13026,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:ef0cdd63706dd7962406e567a7027bf5b1b1864e6fc535d2668547fbc5a8fe72",
+          "Fingerprint": "sha256:023603a03ba442fc4859886400de4a1751dd6b0cfe00cc505941b15d5d941903",
           "Title": "openssl: OpenSSL: Remote code execution or Denial of Service via oversized Initialization Vector in CMS parsing",
           "Description": "Issue summary: Parsing CMS AuthEnvelopedData or EnvelopedData message with\nmaliciously crafted AEAD parameters can trigger a stack buffer overflow.\n\nImpact summary: A stack buffer overflow may lead to a crash, causing Denial\nof Service, or potentially remote code execution.\n\nWhen parsing CMS (Auth)EnvelopedData structures that use AEAD ciphers such as\nAES-GCM, the IV (Initialization Vector) encoded in the ASN.1 parameters is\ncopied into a fixed-size stack buffer without verifying that its length fits\nthe destination. An attacker can supply a crafted CMS message with an\noversized IV, causing a stack-based out-of-bounds write before any\nauthentication or tag verification occurs.\n\nApplications and services that parse untrusted CMS or PKCS#7 content using\nAEAD ciphers (e.g., S/MIME (Auth)EnvelopedData with AES-GCM) are vulnerable.\nBecause the overflow occurs prior to authentication, no valid key material\nis required to trigger it. While exploitability to remote code execution\ndepends on platform and toolchain mitigations, the stack-based write\nprimitive represents a severe risk.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the CMS implementation is outside the OpenSSL FIPS module\nboundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3 and 3.0 are vulnerable to this issue.\n\nOpenSSL 1.1.1 and 1.0.2 are not affected by this issue.",
           "Severity": "HIGH",
@@ -13168,7 +13168,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:b596c9d75f14456a39ac4daa7ab6e695ecba0f98717e4e26e8784bab6c0b37f6",
+          "Fingerprint": "sha256:4a6eca80101db00b6004e8e1fa7e9fc64bfbfaf2ab57735be0101de0a9330ddf",
           "Title": "openssl: OpenSSL: Denial of Service via malformed PKCS#12 file processing",
           "Description": "Issue summary: Processing a malformed PKCS#12 file can trigger a NULL pointer\ndereference in the PKCS12_item_decrypt_d2i_ex() function.\n\nImpact summary: A NULL pointer dereference can trigger a crash which leads to\nDenial of Service for an application processing PKCS#12 files.\n\nThe PKCS12_item_decrypt_d2i_ex() function does not check whether the oct\nparameter is NULL before dereferencing it. When called from\nPKCS12_unpack_p7encdata() with a malformed PKCS#12 file, this parameter can\nbe NULL, causing a crash. The vulnerability is limited to Denial of Service\nand cannot be escalated to achieve code execution or memory disclosure.\n\nExploiting this issue requires an attacker to provide a malformed PKCS#12 file\nto an application that processes it. For that reason the issue was assessed as\nLow severity according to our Security Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the PKCS#12 implementation is outside the OpenSSL FIPS module boundary.\n\nOpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are vulnerable to this issue.",
           "Severity": "HIGH",
@@ -13285,7 +13285,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:7c0e0f0d466841f3d763d7e7c06ecb595aaa1acdfa6ce6f714ccd93e7648a13b",
+          "Fingerprint": "sha256:09f517a12538e5434c953815d6c222d70c2647edb6c8b2662bea3329c182330f",
           "Title": "openssl: OpenSSL: Denial of Service via unbounded memory growth in QUIC server",
           "Description": "Issue summary: When an OpenSSL QUIC server (Listener SSL object) processes\nvalid QUIC Initial packets for unknown destination connection IDs, it\ncan allocate and queue new incoming channels without enforcing any limit.\n\nImpact summary: A remote peer that can make many Initial packets reach the\nserver listener faster than the application accepts connections, can cause the\nmemory allocated to store the per-channel state to grow without any limits,\npotentially making the QUIC listener unavailable and causing Denial of Service.\n\nCWE: CWE-770: Allocation of Resources Without Limits or Throttling\n\nDescription: The function that handles inbound QUIC packets uses\nConnection-Id from the packet header to find an existing connection\n(QUIC channel). If no existing connection is found and the packet\ntype is INITIAL, the function treats the packet as a new connection. It\nallocates a new channel object and inserts it into a queue where it\nwaits to be accepted by the local application with SSL_accept(3ossl).\nThe memory occupied by these initial channel objects may grow\nwithout bounds if the application is not able to call SSL_accept()\nfrequently enough to serve these inbound connection requests.\n\nThe issue is present since OpenSSL 3.5 when the QUIC server implementation\nwas added.\n\nThe fix introduces a limit for pending connections. The default limit is set\nto 256 pending connections (waiting to be accepted by the local application).\nApplications may change the default by calling SSL_set_value_uint(3ossl).\n\nFIPS impact: no\nThe FIPS module is not affected as the QUIC implementation is outside of\nthe OpenSSL FIPS module boundary.",
           "Severity": "HIGH",
@@ -13357,7 +13357,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:26c8add67f5010e5d55da7776e484f7b225a66a82341a63accca27befa49d1e4",
+          "Fingerprint": "sha256:50e9e447bf45f757545bdf6fd206fcf14d23232bd7b5719a1ba032145563d583",
           "Title": "openssl: OpenSSL: Arbitrary code execution due to use-after-free in DANE TLSA authentication",
           "Description": "Issue summary: An uncommon configuration of clients performing DANE TLSA-based\nserver authentication, when paired with uncommon server DANE TLSA records, may\nresult in a use-after-free and/or double-free on the client side.\n\nImpact summary: A use after free can have a range of potential consequences\nsuch as the corruption of valid data, crashes or execution of arbitrary code.\n\nHowever, the issue only affects clients that make use of TLSA records with both\nthe PKIX-TA(0/PKIX-EE(1) certificate usages and the DANE-TA(2) certificate\nusage.\n\nBy far the most common deployment of DANE is in SMTP MTAs for which RFC7672\nrecommends that clients treat as 'unusable' any TLSA records that have the PKIX\ncertificate usages.  These SMTP (or other similar) clients are not vulnerable\nto this issue.  Conversely, any clients that support only the PKIX usages, and\nignore the DANE-TA(2) usage are also not vulnerable.\n\nThe client would also need to be communicating with a server that publishes a\nTLSA RRset with both types of TLSA records.\n\nNo FIPS modules are affected by this issue, the problem code is outside the\nFIPS module boundary.",
           "Severity": "HIGH",
@@ -13430,7 +13430,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:283354c16dc2762fad16bb5d7c2976cc962ca479886d88b21fbeb9f63cc452ce",
+          "Fingerprint": "sha256:0c22f361d4678bbd61176a7d6350ddda15274aeacd0a616becb81026dc9acc4a",
           "Title": "openssl: OpenSSL: Denial of Service due to NULL pointer dereference in delta CRL processing",
           "Description": "Issue summary: When a delta CRL that contains a Delta CRL Indicator extension\nis processed a NULL pointer dereference might happen if the required CRL\nNumber extension is missing.\n\nImpact summary: A NULL pointer dereference can trigger a crash which\nleads to a Denial of Service for an application.\n\nWhen CRL processing and delta CRL processing is enabled during X.509\ncertificate verification, the delta CRL processing does not check\nwhether the CRL Number extension is NULL before dereferencing it.\nWhen a malformed delta CRL file is being processed, this parameter\ncan be NULL, causing a NULL pointer dereference.\n\nExploiting this issue requires the X509_V_FLAG_USE_DELTAS flag to be enabled in\nthe verification context, the certificate being verified to contain a\nfreshestCRL extension or the base CRL to have the EXFLAG_FRESHEST flag set, and\nan attacker to provide a malformed CRL to an application that processes it.\n\nThe vulnerability is limited to Denial of Service and cannot be escalated to\nachieve code execution or memory disclosure. For that reason the issue was\nassessed as Low severity according to our Security Policy.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this issue,\nas the affected code is outside the OpenSSL FIPS module boundary.",
           "Severity": "HIGH",
@@ -13503,7 +13503,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:5a908a2e30e02c2e8877ea55ed9f1e83adefb811b7e57f1c264ca30366457366",
+          "Fingerprint": "sha256:a8a52d13525c57be4f922e318d9679f3111b7239f7780f8ac12c58d67383f085",
           "Title": "openssl: OpenSSL: Denial of Service vulnerability in CMS processing",
           "Description": "Issue summary: During processing of a crafted CMS EnvelopedData message\nwith KeyAgreeRecipientInfo a NULL pointer dereference can happen.\n\nImpact summary: Applications that process attacker-controlled CMS data may\ncrash before authentication or cryptographic operations occur resulting in\nDenial of Service.\n\nWhen a CMS EnvelopedData message that uses KeyAgreeRecipientInfo is\nprocessed, the optional parameters field of KeyEncryptionAlgorithmIdentifier\nis examined without checking for its presence. This results in a NULL\npointer dereference if the field is missing.\n\nApplications and services that call CMS_decrypt() on untrusted input\n(e.g., S/MIME processing or CMS-based protocols) are vulnerable.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary.",
           "Severity": "HIGH",
@@ -13577,7 +13577,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:f6e76424d22e01115c835578d8ad5683016a1b69b67f1df962fc45d255ba73a3",
+          "Fingerprint": "sha256:5c6a0a03c7468f0ea627d3ad16c9ae72ec6702a324858d99d91c4e51619ad982",
           "Title": "openssl: OpenSSL: Denial of Service due to NULL pointer dereference in CMS EnvelopedData processing",
           "Description": "Issue summary: During processing of a crafted CMS EnvelopedData message\nwith KeyTransportRecipientInfo a NULL pointer dereference can happen.\n\nImpact summary: Applications that process attacker-controlled CMS data may\ncrash before authentication or cryptographic operations occur resulting in\nDenial of Service.\n\nWhen a CMS EnvelopedData message that uses KeyTransportRecipientInfo with\nRSA-OAEP encryption is processed, the optional parameters field of\nRSA-OAEP SourceFunc algorithm identifier is examined without checking\nfor its presence. This results in a NULL pointer dereference if the field\nis missing.\n\nApplications and services that call CMS_decrypt() on untrusted input\n(e.g., S/MIME processing or CMS-based protocols) are vulnerable.\n\nThe FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary.",
           "Severity": "HIGH",
@@ -13662,7 +13662,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:b36b177f18eb4cc3a39996e70fb6d68c8738d2933111e73c7cb6385a111faeba",
+          "Fingerprint": "sha256:5edb6cf84935cbb999f28569d67582752bdfdd7609371665d82b3df28bcaf73f",
           "Title": "openssl: Heap Use-After-Free in OpenSSL PKCS7_verify()",
           "Description": "Issue summary: A specially crafted PKCS#7 or S/MIME signed message could\ntrigger a use-after-free during PKCS#7 signature verification.\n\nImpact summary: A use-after-free may result in process crashes, heap\ncorruption, or potentially remote code execution.\n\nWhen processing a PKCS#7 or S/MIME signed message, if the SignedData\ndigestAlgorithms field is present as an empty ASN.1 SET, OpenSSL may\nincorrectly free a caller-owned BIO during PKCS7_verify(). A subsequent\nuse of the BIO by the calling application results in a use-after-free\ncondition.\n\nIn the common case this occurs when the application later calls\nBIO_free() on the BIO originally passed to PKCS7_verify(). Depending\non allocator behavior and application-specific BIO usage patterns, this\nmay result in a crash or other memory corruption. In some application\ncontexts this may potentially be exploitable for remote code execution.\n\nApplications that process PKCS#7 or S/MIME signed messages using OpenSSL\nPKCS#7 APIs may be affected. Applications using the CMS APIs for this\nprocessing are not affected.\n\nThe FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not affected by this\nissue, as the affected code is outside the OpenSSL FIPS module boundary.",
           "Severity": "HIGH",
@@ -13790,7 +13790,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:6cf44cba50f126a2e051ed5d365bb161d5344166702d241fb4ff69228de992ce",
+          "Fingerprint": "sha256:522341cca4e064f6c1ac15f0083f55a2408216c02030427249e379a563e8057c",
           "Title": "perl: Perl: Incorrect regular expression processing via large regular expressions",
           "Description": "Perl versions before 5.40.5-RC1, from 5.41.0 before 5.42.3-RC1, from 5.43.0 before 5.43.10 produce silently incorrect regular expression matches when an alternation of more than 65535 fixed string branches is compiled into a trie in Perl_study_chunk.\n\nWhen such branches are combined into a trie, the delta between the first branch and the shared tail is stored in a 16-bit field. A branch count above 65535 overflows the field, and the trie's match decision table is truncated with no warning or error.\n\nA pattern of this shape produces false positive matches (matching strings it should not) and false negative matches (failing to match strings it should). When such a pattern gates an access or filtering decision, the result is wrong.",
           "Severity": "CRITICAL",
@@ -13863,7 +13863,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:7562727218eeb8aeed58881c9e0b40b8b691c37363067f9e7c11a2f913bd8abc",
+          "Fingerprint": "sha256:b0453186af34fc2aad778f7882bc23e3f6735dab6c42c304541c341fd6093c6d",
           "Title": "perl-archive-tar: perl-archive-tar: Path traversal via crafted symlinks allows arbitrary file access",
           "Description": "Archive::Tar versions before 3.08 for Perl extract symlinks with attacker controlled targets outside the extraction directory.\n\n_make_special_file() passes the tar header's linkname to symlink() without validating it against absolute paths or .. segments. The secure-extract mode check that guards regular file extraction does not cover the symlink target.\n\nA subsequent open through the extracted name reads or writes the attacker chosen path.",
           "Severity": "CRITICAL",
@@ -13938,7 +13938,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:09025412be4fba1db3162c5bfc0c2a9067bdca70a46cc476759a9503f6b1a32d",
+          "Fingerprint": "sha256:92c0646e62ce6f16df14415b8ea726b36e37b514bf79f465338bba3d652758ba",
           "Title": "perl: Perl: Heap buffer overflow when compiling regular expressions on 32-bit builds",
           "Description": "Perl versions before 5.40.5-RC1, from 5.41.0 before 5.42.3-RC1, from 5.43.0 before 5.43.11 have a heap buffer overflow when compiling regular expressions with a repeated fixed string on 32-bit builds.\n\nPerl_study_chunk in regcomp_study.c checked the size of the joined substring buffer in characters rather than bytes. For a quantified fixed substring with a large minimum count, the byte length mincount * l could overflow SSize_t, producing an undersized SvGROW allocation; the subsequent copy writes past the end of the buffer.\n\nA caller that compiles an attacker-controlled regular expression on a 32-bit perl build triggers a heap buffer overflow at compile time.",
           "Severity": "CRITICAL",
@@ -13996,7 +13996,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:ef4377636cf24a8fad0bb3675983b8f03902978103a4b07e6cfdcf30b0e7a585",
+          "Fingerprint": "sha256:cc24f7c962fa38439a54e7c4182ead47e1d2adcac80ea1323fdcfa72cb65fb16",
           "Title": "perl-Archive-Tar: perl-Archive-Tar: Arbitrary file modification via crafted hardlinks during archive extraction",
           "Description": "Archive::Tar versions before 3.08 for Perl extract hardlinks to attacker controlled paths outside the extraction directory.\n\n_make_special_file() passes the tar header's linkname to link() without validating it against absolute paths or .. segments, creating a hardlink that shares the victim file's inode.\n\nA subsequent write through the extracted name modifies the victim file, and the post-extraction chmod, chown, and utime block in _extract_file() (guarded only against symlinks via -l) applies the tar header's mode, owner, and timestamps to the shared inode during extraction alone.",
           "Severity": "HIGH",
@@ -14053,7 +14053,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:4f2f4ea2472dcea6083d8ea070be47c0fb55e0933b621fe6d62007982ea5a4d4",
+          "Fingerprint": "sha256:e5e4bf922fcc74926332ce86822940725ac15a9d87dceac61152dc8b2a793343",
           "Title": "perl-IO-Compress: perl-IO-Compress: Arbitrary code execution via attacker-controlled output glob",
           "Description": "IO::Compress versions before 2.220 for Perl can execute arbitrary code in File::GlobMapper via an attacker-controlled output glob.\n\n_parseOutputGlob() wraps the caller-supplied output glob string in double quotes and stores it in the parser state; _getFiles() then runs the stored expression through eval STRING. A literal double quote in the output glob closes the dquote wrapper, and the characters that follow are evaluated as Perl.\n\nArbitrary Perl in the output glob executes at the calling process's privilege.",
           "Severity": "HIGH",
@@ -14132,7 +14132,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:d627ffa497bc38e8069a8fe3e24c744fd266195a27ede1023f5237bed3fa97c7",
+          "Fingerprint": "sha256:8ab82418848aa3480615d0ff4293f3a0af6649fd8f1c1763047804d7a37fce8f",
           "Title": "perl: Perl: Information disclosure via integer overflow in pack/unpack operations",
           "Description": "Perl versions before 5.40.5-RC1, from 5.41.0 before 5.42.3-RC1, from 5.43.0 before 5.43.11 have an integer overflow in S_measure_struct leading to an out-of-bounds heap read in pack and unpack.\n\nS_measure_struct adds each item's size times its repeat count to a running total with no overflow check, so a large repeat count in a pack or unpack template wraps the signed SSize_t total negative. The @, X, and x position codes then guard their moves with a signed length comparison that passes when the length is negative, advancing the buffer pointer out of bounds.\n\nA template derived from untrusted input can read heap memory past the buffer and return it to the caller.",
           "Severity": "HIGH",
@@ -14192,7 +14192,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:7cbfd7c9f9c23152e0cf313507103f7b416b15bd53a931bb2423728671820b96",
+          "Fingerprint": "sha256:f6ce247a2e9140d2a59e3a59a14b2dda5c5ef7ebe4f8797809b5a7411c13481a",
           "Title": "Storable: Storable: Denial of Service via signed integer overflow in deserialization",
           "Description": "Storable versions before 3.41 for Perl have a signed integer overflow when deserializing a crafted SX_HOOK record.\n\nretrieve_hook_common reads a signed 32-bit item count from an SX_HOOK record and calls av_extend with that count plus one. A count of I32_MAX wraps the addition to a negative value.\n\nA crafted blob passed to thaw or retrieve triggers the overflow; av_extend receives the negative count and dies with a panic, terminating the deserialization.",
           "Severity": "HIGH",
@@ -14244,7 +14244,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:316074f02bc8ddb851d32e19ccd003d64296de0153fa69f9184b203d93ca4c28",
+          "Fingerprint": "sha256:1b143ec29d042e1f38b59481315b936f7285f33ff93d71605ec6294039761e6a",
           "Title": "perl-Archive-Tar: perl-Archive-Tar: Denial of Service via crafted tar header with large entry size",
           "Description": "Archive::Tar versions before 3.10 for Perl allow memory exhaustion via attacker controlled entry size field in tar header.\n\n_read_tar() reads each entry's payload with $handle-\u003eread($$data, $block), where $block is derived from the entry's 12-byte size field in the tar header with no upper bound on that value.\n\nA crafted header declaring a multi-gigabyte size causes Perl to allocate a scalar of that size.",
           "Severity": "HIGH",
@@ -14315,7 +14315,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:7d392ee8d8f6e32c0ea49968504a97fd4a35026b0e199c1e5ca8b03d0a5e22a2",
+          "Fingerprint": "sha256:ffb43665ef9373b4ddc7dd739897d449c814e68c28d31928c7ea6f550b4efae9",
           "Title": "util-linux: util-linux: TOCTOU in the mount program when applying post-mount ownership/mode changes",
           "Description": "A flaw was found in util-linux. When an /etc/fstab entry uses the user option together with X-mount.owner, X-mount.group, or X-mount.mode, mount(8) changes ownership or permissions on the mount target after mounting without re-verifying the path. A local unprivileged user can exploit this Time-of-Check-Time-of-Use (TOCTOU) window by swapping the target directory, redirecting the ownership/permission change to an arbitrary file and potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -14360,7 +14360,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:69a82e18421699854e1c5685b4735680493a51eecf936a88408a62fd6d6dc702",
+          "Fingerprint": "sha256:3c9b9658ee2a1131819ff7b41ff400a43511f73909bb5dd34b11811a69c16043",
           "Title": "util-linux: util-linux: TOCTOU in the mount program via ancestor directory swap on target path",
           "Description": "When an /etc/fstab entry is configured with the user or users option, mount(8) validates the target path before performing the mount syscall, creating a Time-of-Check-Time-of-Use (TOCTOU) window. A local unprivileged user with write access to an ancestor directory of the mount target can swap that directory to redirect the mount to an arbitrary root-owned location, potentially escalating privileges to root.",
           "Severity": "HIGH",
@@ -14405,7 +14405,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:9ef539f6dd104b7dfdb0d61b4b8f781085f24ccf349a9001f6972e77ec616906",
+          "Fingerprint": "sha256:a5aa1d27d29df90fbba926532bba6047aae55444a571850447a926d6dd8c96aa",
           "Title": "util-linux: util-linux: SUID mount(8) allows nosuid/noexec bypass via LIBMOUNT_FORCE_MOUNT2",
           "Description": "A flaw was found in util-linux. The mount(8) SUID binary does not sanitize the LIBMOUNT_FORCE_MOUNT2 environment variable before use. A local unprivileged user can set this variable to force mount(8) to use the legacy two-step mount(2) code path, which applies security restrictions such as nosuid and noexec after the mount is already active. During this window, an attacker can execute a SUID binary from the mounted filesystem, allowing local privilege escalation to root.",
           "Severity": "HIGH",
@@ -14446,7 +14446,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:e1f726300ecb3c8112be8dace33fb74300f930a0698a427807fceb9f2713ca2f",
+          "Fingerprint": "sha256:5a4e5711bd86252270a47a61d0e36994257a3cc91d4e2718775231a0b978c766",
           "Title": "util-linux: util-linux: failed external mount helper still runs privileged X-mount post-hooks",
           "Description": "util-linux versions through 2.41.5 and 2.42.2 fail to check mount helper exit status before running post-mount hooks, allowing unprivileged users to execute privileged operations on pre-existing filesystems. Attackers can exploit X-mount.idmap or X-mount.owner hooks to clone filesystems with inherited suid bits or modify target inode permissions after a helper fails, achieving privilege escalation.",
           "Severity": "HIGH",
@@ -14497,7 +14497,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:eeca92f452f4bca6b71fb4251bbe15441dcc1d65defbc804018b8b4a9feb0392",
+          "Fingerprint": "sha256:2334627cc4c26433f1af116c962921374284dc739c6f4bf36c24e392addf0527",
           "Title": "util-linux: util-linux: nsenter --join-cgroup leaks root cgroup migration authority",
           "Description": "The nsenter --join-cgroup option opens the target cgroup.procs file as root and leaves that file descriptor open across later namespace and credential changes and across execve(). Because the kernel checks later cgroup migrations using the credentials from the original open, a program run in an attacker-controlled target can inherit root's ability to move host processes between cgroups. After a privileged operator uses --join-cgroup against that target, an unprivileged user can migrate and terminate unrelated root processes.",
           "Severity": "HIGH",
@@ -14544,7 +14544,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:83f421649c8cf1a8ed68ecb6aa6b627ac89e8712afc9e3661c6b605461a33bba",
+          "Fingerprint": "sha256:3344fc56d8de5167b6c403bc776875f22e483b29220f8799c7c36edbe756785a",
           "Title": "util-linux: util-linux: X-mount.subdir detached-tree resolution can escape via intermediate symlinks",
           "Description": "The X-mount.subdir option uses a detached-tree fast path on Linux 6.15 and later and passes the configured subdirectory to open_tree() with AT_SYMLINK_NOFOLLOW. That flag does not stop intermediate symlink traversal or keep resolution inside the newly mounted filesystem. A local unprivileged user with an fstab-authorized X-mount.subdir entry can attach a host path at the intended mountpoint.",
           "Severity": "HIGH",
@@ -14590,7 +14590,7 @@
             "Name": "Debian Security Tracker",
             "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
           },
-          "Fingerprint": "sha256:26b79d5a063b84a0b0ef5c4e069f663682bd2a709ee108bd82350d3ddf79a9db",
+          "Fingerprint": "sha256:a0c6ec69cbacc64ba90d96649ec31dad8a3c1202bb0a199d7cc40b45604dbd4c",
           "Title": "util-linux: util-linux: restricted bind mounts do not pin the source, allowing X-mount.owner/group/mode redirection",
           "Description": "A flaw was found in util-linux. Restricted bind mounts take the source path from fstab but do not pin that source before the privileged mount. A local unprivileged user who can replace the authorized source or a writable ancestor can redirect SUID mount(8) to bind another host directory. If the fstab entry also sets X-mount.owner, X-mount.group, or X-mount.mode, root then changes ownership or mode on that redirected inode.",
           "Severity": "HIGH",
@@ -14635,7 +14635,7 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "DiffID": "sha256:c5906b9faa689f2a97fc0a05a9ad5edf8a855440a865c605f89aa7853bb9eca7"
+            "DiffID": "sha256:a3edb342c8fc158eb3a6ea2bd694fc3ff5115efa5dce5f3d2bb636388e784fdc"
           },
           "FilePath": "usr/local/lib/python3.9/site-packages/flask-3.1.3.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -14651,7 +14651,7 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "DiffID": "sha256:c5906b9faa689f2a97fc0a05a9ad5edf8a855440a865c605f89aa7853bb9eca7"
+            "DiffID": "sha256:a3edb342c8fc158eb3a6ea2bd694fc3ff5115efa5dce5f3d2bb636388e784fdc"
           },
           "FilePath": "usr/local/lib/python3.9/site-packages/jinja2-3.1.6.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -14667,7 +14667,7 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "DiffID": "sha256:c5906b9faa689f2a97fc0a05a9ad5edf8a855440a865c605f89aa7853bb9eca7"
+            "DiffID": "sha256:a3edb342c8fc158eb3a6ea2bd694fc3ff5115efa5dce5f3d2bb636388e784fdc"
           },
           "FilePath": "usr/local/lib/python3.9/site-packages/markupsafe-3.0.3.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -14683,7 +14683,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:c5906b9faa689f2a97fc0a05a9ad5edf8a855440a865c605f89aa7853bb9eca7"
+            "DiffID": "sha256:a3edb342c8fc158eb3a6ea2bd694fc3ff5115efa5dce5f3d2bb636388e784fdc"
           },
           "FilePath": "usr/local/lib/python3.9/site-packages/pyjwt-2.14.0.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -14699,7 +14699,7 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "DiffID": "sha256:c5906b9faa689f2a97fc0a05a9ad5edf8a855440a865c605f89aa7853bb9eca7"
+            "DiffID": "sha256:a3edb342c8fc158eb3a6ea2bd694fc3ff5115efa5dce5f3d2bb636388e784fdc"
           },
           "FilePath": "usr/local/lib/python3.9/site-packages/werkzeug-3.1.8.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -14747,7 +14747,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:c5906b9faa689f2a97fc0a05a9ad5edf8a855440a865c605f89aa7853bb9eca7"
+            "DiffID": "sha256:a3edb342c8fc158eb3a6ea2bd694fc3ff5115efa5dce5f3d2bb636388e784fdc"
           },
           "FilePath": "usr/local/lib/python3.9/site-packages/blinker-1.9.0.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -14763,7 +14763,7 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "DiffID": "sha256:c5906b9faa689f2a97fc0a05a9ad5edf8a855440a865c605f89aa7853bb9eca7"
+            "DiffID": "sha256:a3edb342c8fc158eb3a6ea2bd694fc3ff5115efa5dce5f3d2bb636388e784fdc"
           },
           "FilePath": "usr/local/lib/python3.9/site-packages/click-8.1.8.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -14795,7 +14795,7 @@
             "Apache-2.0"
           ],
           "Layer": {
-            "DiffID": "sha256:c5906b9faa689f2a97fc0a05a9ad5edf8a855440a865c605f89aa7853bb9eca7"
+            "DiffID": "sha256:a3edb342c8fc158eb3a6ea2bd694fc3ff5115efa5dce5f3d2bb636388e784fdc"
           },
           "FilePath": "usr/local/lib/python3.9/site-packages/importlib_metadata-8.7.1.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -14827,7 +14827,7 @@
             "BSD-3-Clause"
           ],
           "Layer": {
-            "DiffID": "sha256:c5906b9faa689f2a97fc0a05a9ad5edf8a855440a865c605f89aa7853bb9eca7"
+            "DiffID": "sha256:a3edb342c8fc158eb3a6ea2bd694fc3ff5115efa5dce5f3d2bb636388e784fdc"
           },
           "FilePath": "usr/local/lib/python3.9/site-packages/itsdangerous-2.2.0.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -15033,7 +15033,7 @@
             "PSF-2.0"
           ],
           "Layer": {
-            "DiffID": "sha256:c5906b9faa689f2a97fc0a05a9ad5edf8a855440a865c605f89aa7853bb9eca7"
+            "DiffID": "sha256:a3edb342c8fc158eb3a6ea2bd694fc3ff5115efa5dce5f3d2bb636388e784fdc"
           },
           "FilePath": "usr/local/lib/python3.9/site-packages/typing_extensions-4.16.0.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -15097,7 +15097,7 @@
             "MIT"
           ],
           "Layer": {
-            "DiffID": "sha256:c5906b9faa689f2a97fc0a05a9ad5edf8a855440a865c605f89aa7853bb9eca7"
+            "DiffID": "sha256:a3edb342c8fc158eb3a6ea2bd694fc3ff5115efa5dce5f3d2bb636388e784fdc"
           },
           "FilePath": "usr/local/lib/python3.9/site-packages/zipp-3.23.1.dist-info/METADATA",
           "AnalyzedBy": "python-pkg"
@@ -15128,7 +15128,7 @@
             "Name": "GitHub Security Advisory pip",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
           },
-          "Fingerprint": "sha256:52a2a02c441944f03dfe6a708a9108e17883a4ff85ef637736d41d80c0119207",
+          "Fingerprint": "sha256:541cbda5e92295df8b1cb594d904751f05479639210d821c265c7bb17a5a06fa",
           "Title": "jaraco.context: jaraco.context: Path traversal via malicious tar archives",
           "Description": "jaraco.context, an open-source software package that provides some useful decorators and context managers, has a Zip Slip path traversal vulnerability in the `jaraco.context.tarball()` function starting in version 5.2.0 and prior to version 6.1.0. The vulnerability may allow attackers to extract files outside the intended extraction directory when malicious tar archives are processed. The strip_first_component filter splits the path on the first `/` and extracts the second component, while allowing `../` sequences. Paths like `dummy_dir/../../etc/passwd` become `../../etc/passwd`. Note that this suffers from a nested tarball attack as well with multi-level tar files such as `dummy_dir/inner.tar.gz`, where the inner.tar.gz includes a traversal `dummy_dir/../../config/.env` that also gets translated to `../../config/.env`. Version 6.1.0 contains a patch for the issue.",
           "Severity": "HIGH",
@@ -15188,7 +15188,7 @@
             "Name": "GitHub Security Advisory pip",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
           },
-          "Fingerprint": "sha256:2ddf126a298bef68bd7112670561e89611be79f119ac024ae6f1ceb08c6286cd",
+          "Fingerprint": "sha256:ce2a7c732f275a981409a5ee984a007db5ec2b44dd8063b4971c1988fc26c34d",
           "Title": "wheel: wheel: Privilege Escalation or Arbitrary Code Execution via malicious wheel file unpacking",
           "Description": "wheel is a command line tool for manipulating Python wheel files, as defined in PEP 427. In versions 0.40.0 through 0.46.1, the unpack function is vulnerable to file permission modification through mishandling of file permissions after extraction. The logic blindly trusts the filename from the archive header for the chmod operation, even though the extraction process itself might have sanitized the path. Attackers can craft a malicious wheel file that, when unpacked, changes the permissions of critical system files (e.g., /etc/passwd, SSH keys, config files), allowing for Privilege Escalation or arbitrary code execution by modifying now-writable scripts. This issue has been fixed in version 0.46.2.",
           "Severity": "HIGH",
@@ -15313,7 +15313,7 @@
             "Name": "GitHub Security Advisory pip",
             "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Apip"
           },
-          "Fingerprint": "sha256:2ddf126a298bef68bd7112670561e89611be79f119ac024ae6f1ceb08c6286cd",
+          "Fingerprint": "sha256:ce2a7c732f275a981409a5ee984a007db5ec2b44dd8063b4971c1988fc26c34d",
           "Title": "wheel: wheel: Privilege Escalation or Arbitrary Code Execution via malicious wheel file unpacking",
           "Description": "wheel is a command line tool for manipulating Python wheel files, as defined in PEP 427. In versions 0.40.0 through 0.46.1, the unpack function is vulnerable to file permission modification through mishandling of file permissions after extraction. The logic blindly trusts the filename from the archive header for the chmod operation, even though the extraction process itself might have sanitized the path. Attackers can craft a malicious wheel file that, when unpacked, changes the permissions of critical system files (e.g., /etc/passwd, SSH keys, config files), allowing for Privilege Escalation or arbitrary code execution by modifying now-writable scripts. This issue has been fixed in version 0.46.2.",
           "Severity": "HIGH",
