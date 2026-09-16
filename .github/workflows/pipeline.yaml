@@ -93,3 +93,41 @@ jobs:
           else:
               print('No critical vulnerabilities found')
           "
+
+  iac-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install Checkov
+        run: pip install checkov
+
+      - name: Run Checkov IaC scan
+        run: checkov -f main.tf -o json > checkov-report.json || true
+
+      - name: Commit Checkov report to repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add checkov-report.json
+          git commit -m "Add Checkov scan report [skip ci]" || echo "No changes to commit"
+          git pull --rebase origin main
+          git push
+
+      - name: Check for failed checks
+        run: |
+          python3 -c "
+          import json
+          with open('checkov-report.json') as f:
+              data = json.load(f)
+          results = data if isinstance(data, list) else [data]
+          failed = []
+          for r in results:
+              failed.extend(r.get('results', {}).get('failed_checks', []))
+          if failed:
+              print(f'BLOCKED: {len(failed)} failed IaC check(s) found')
+              exit(1)
+          else:
+              print('No failed IaC checks found')
+          "
