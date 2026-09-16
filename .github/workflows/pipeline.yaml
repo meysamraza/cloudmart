@@ -1,0 +1,51 @@
+name: Security Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  sast-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Bandit
+        run: pip install bandit
+
+      - name: Run Bandit SAST scan
+        run: bandit -r . -f json -o bandit-report.json || true
+
+      - name: Commit Bandit report to repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add bandit-report.json
+          git commit -m "Add Bandit scan report [skip ci]" || echo "No changes to commit"
+          git pull --rebase origin main
+          git push
+
+      - name: Check for critical findings
+        run: |
+          python -c "
+          import json
+          with open('bandit-report.json') as f:
+              data = json.load(f)
+          high = [r for r in data['results'] if r['issue_severity'] == 'HIGH']
+          if high:
+              print(f'BLOCKED: {len(high)} high-severity issue(s) found')
+              exit(1)
+          else:
+              print('No high-severity issues found')
+          "
